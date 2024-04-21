@@ -1,0 +1,32 @@
+{
+    "folders": [
+        {
+            "path": "Assets/Scripts",
+            "file_exclude_patterns": [
+                "*.dll",
+                "*.meta"
+            ]
+        },
+        {
+            "path": "Assets/Editor",
+            "file_exclude_patterns": [
+                "*.dll",
+                "*.meta"
+            ]
+        },
+        {
+            "path": "Assets/Voidless/Editor",
+            "file_exclude_patterns": [
+                "*.dll",
+                "*.meta"
+            ]
+        },
+        {
+            "path": "Assets/Voidless/Scripts",
+            "file_exclude_patterns": [
+                "*.dll",
+                "*.meta"
+            ]
+        }
+    ]
+}
