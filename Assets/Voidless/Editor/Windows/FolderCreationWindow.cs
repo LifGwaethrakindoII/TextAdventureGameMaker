@@ -7,45 +7,44 @@ using UnityEditor;
 
 namespace Voidless
 {
-public enum EssentialFolders 																	/// <summary>Enumerator listing the considered essential Folders.</summary>
+public enum EssentialFolders
 {
-	Animations, 																				/// <summary>Animations' Folder.</summary>
-	Animator_Controllers, 																		/// <summary>Animator Controller's Folder.</summary>
-	Audios, 																					/// <summary>Audios' Folder.</summary>
-	Editor, 																					/// <summary>Editor's Folder.</summary>
-	Editor_Default_Resources, 																	/// <summary>Editor Default Resources' Folder.</summary>
-	Images, 																					/// <summary>Images' Folder.</summary>
-	Gizmos, 																					/// <summary>Gizmos' Folder.</summary>
-	Materials, 																					/// <summary>Materials' Folder.</summary>
-	Models, 																					/// <summary>Models' Folder.</summary>
-	Music, 																						/// <summary>Music's Folder.</summary>
-	Plugins, 																					/// <summary>Plugins' Folder.</summary>
-	Resources, 																					/// <summary>Resources' Folder.</summary>
-	Scenes, 																					/// <summary>Scenes' Folder.</summary>
-	Scripts, 																					/// <summary>Scripts' Folder.</summary>
-	Shaders, 																					/// <summary>Shaders' Folder.</summary>
-	Sounds, 																					/// <summary>Sounds' Folder.</summary>
-	StreamingAssets, 																			/// <summary>StreamingAssets' Folder.</summary>
-	Textures 																					/// <summary>Textures' Folder.</summary>
+	Animations,
+	Animator_Controllers,
+	Audios,
+	Editor,
+	Editor_Default_Resources,
+	Images,
+	Gizmos,
+	Materials,
+	Models,
+	Music,
+	Plugins,
+	Resources,
+	Scenes,
+	Scripts,
+	Shaders,
+	Sounds,
+	StreamingAssets,
+	Textures 
 }
 
 public class FolderCreationWindow : EditorWindow
 {
-	private const string FOLDERCREATIONWINDOW_PATH = "Voidless Tools/Folder Creation Menu"; 	/// <summary>FolderCreationWindow's path.</summary>
-	private const string ICON_FOLDER = "Folder Icon"; 											/// <summary>Folder's Icon.</summary>
-	private const float SPACE = 20.0f; 															/// <summary>Default Space.</summary>
-	private const float WIDTH_BUTTON = 50.0f; 													/// <summary>Button's Width.</summary>
-	private const int MAX_STRING_SIZE = 24; 													/// <summary>Maximum's size of string.</summary>
+	private const string ICON_FOLDER = "Folder Icon";
+	private const float SPACE = 20.0f;
+	private const float WIDTH_BUTTON = 50.0f;
+	private const int MAX_STRING_SIZE = 24;
 
-	public static FolderCreationWindow folderCreationWindow; 									/// <summary>FolderCreationWindow's static reference</summary>
-	private static List<string> unexistingFolders; 												/// <summary>Folders not yet created.</summary>
-	private static List<string> existingFolders; 												/// <summary>Folders already created.</summary>
-	private static Vector3 scrollPosition; 														/// <summary>Scroll's Position.</summary>
-	private static string dataPath; 															/// <summary>Data Path (Assets).</summary>
+	public static FolderCreationWindow folderCreationWindow;
+	private static List<string> unexistingFolders;
+	private static List<string> existingFolders;
+	private static Vector3 scrollPosition;
+	private static string dataPath;
 
 	/// <summary>Creates a new FolderCreationWindow window.</summary>
 	/// <returns>Created FolderCreationWindow window.</summary>
-	[MenuItem(FOLDERCREATIONWINDOW_PATH)]
+	[MenuItem("Voidless/Folder Creation Menu")]
 	public static FolderCreationWindow CreateFolderCreationWindow()
 	{
 		unexistingFolders = null;

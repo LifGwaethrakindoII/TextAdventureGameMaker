@@ -19,13 +19,11 @@ public class FOVFrustumMeshCreationWindow : EditorWindow
 	private const int INDEX_BOTTOM_RIGHT_FAR = 6;
 	private const int INDEX_BOTTOM_LEFT_FAR = 7;
 
-	protected const string FRUSTUMMESHCREATIONWINDOW_PATH = "/FOV's Frustum Mesh Creation Tool"; 	/// <summary>FOVFrustumMeshCreationWindow's path.</summary>
-
-	public static FOVFrustumMeshCreationWindow frustumMeshCreationWindow; 							/// <summary>FOVFrustumMeshCreationWindow's static reference</summary>
-	private static FOVFrustumMeshCreationWindowConfigurations configurations; 						/// <summary>Window's Configurations.</summary>
-	private static Vector3[] vertices; 																/// <summary>Mesh's Vertices.</summary>
-	private static int[] triangles; 																/// <summary>Mesh's Triangles.</summary>
-	private static Vector2 verticalScrollPosition; 													/// <summary>Vertical Scroll's Position.</summary>
+	public static FOVFrustumMeshCreationWindow frustumMeshCreationWindow;
+	private static FOVFrustumMeshCreationWindowConfigurations configurations;
+	private static Vector3[] vertices;
+	private static int[] triangles;
+	private static Vector2 verticalScrollPosition;
 
 	private void OnEnable()
 	{
@@ -39,7 +37,7 @@ public class FOVFrustumMeshCreationWindow : EditorWindow
 
 	/// <summary>Creates a new FOVFrustumMeshCreationWindow window.</summary>
 	/// <returns>Created FOVFrustumMeshCreationWindow window.</summary>
-	[MenuItem(VString.PATH_ROOT_VOIDLESS_TOOLS + FRUSTUMMESHCREATIONWINDOW_PATH)]
+	[MenuItem("Voidless/FOV's Frustum Mesh Creation Tool")]
 	public static FOVFrustumMeshCreationWindow CreateFOVFrustumMeshCreationWindow()
 	{
 		frustumMeshCreationWindow = GetWindow<FOVFrustumMeshCreationWindow>("Frustum Mesh Creation");

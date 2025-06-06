@@ -9,32 +9,31 @@ namespace Voidless
 {
 public class InputMappingWindow : EditorWindow
 {
-	protected const string INPUTMAPPINGWINDOW_PATH = "/Voidless Tools/Settings/Input Mapping"; 																						/// <summary>InputMappingWindow's path.</summary>
-	private const string EDITOR_DATA_KEY_MAPPING_PATH = "Path_InputMapping_File"; 																									/// <summary>Input Mapping's File path key for the EditorPrefs.</summary>
-	private const string MESSAGE_NO_MAPPING = "You are going to save configurations into a text file that has no previous configurations data. Are you sure you wanna overwrite?"; 	/// <summary>Message when the user is about to save and there was no previous mapping on file.</summary>
-	private const string MESSAGE_MAPPING = "You are going to overwrite previous data. Are you sure you want to overwrite the previous content?"; 									/// <summary>Message when the user is about to save and there was previous mapping on file.</summary>
-	private const float WIDTH_ID = 50.0f; 																																			/// <summary>ID's Zone Width.</summary>
-	private const float WIDTH_BUTTON = 100.0f; 																																		/// <summary>Button's Width.</summary>
-	private const float WIDTH_LABEL = 120.0f; 																																		/// <summary>Label's Width.</summary>
-	private const float WIDTH_TEXT_FIELD = 200.0f; 																																	/// <summary>Text Field's Width.</summary>
-	private const float WIDTH_CONTROLLER_SETUP_CELL = 150.0f; 																														/// <summary>Input Layout's Cell Width.</summary>
+	private const string EDITOR_DATA_KEY_MAPPING_PATH = "Path_InputMapping_File";
+	private const string MESSAGE_NO_MAPPING = "You are going to save configurations into a text file that has no previous configurations data. Are you sure you wanna overwrite?";
+	private const string MESSAGE_MAPPING = "You are going to overwrite previous data. Are you sure you want to overwrite the previous content?";
+	private const float WIDTH_ID = 50.0f;
+	private const float WIDTH_BUTTON = 100.0f;
+	private const float WIDTH_LABEL = 120.0f;
+	private const float WIDTH_TEXT_FIELD = 200.0f;
+	private const float WIDTH_CONTROLLER_SETUP_CELL = 150.0f;
 
-	public static InputMappingWindow inputMappingWindow; 																															/// <summary>InputMappingWindow's static reference</summary>
-	private static InputMapping inputMapping; 																																		/// <summary>Input's Mapping.</summary>
-	private static TextAsset file; 																																					/// <summary>File to save and load the mappings from.</summary>
-	private static Vector2 verticalScrollPosition; 																																	/// <summary>Vertical Scroll Bar's position.</summary>
-	private static bool XBoxLeftAxisYKeyDefault; 																																	/// <summary>Is the Left Y's Axis set as default?.</summary>
-	private static bool XBoxLeftAxisXKeyDefault; 																																	/// <summary>Is the Left X's Axis set as default?.</summary>
-	private static bool XBoxRightAxisYKeyDefault; 																																	/// <summary>Is the Right Y's Axis set as default?.</summary>
-	private static bool XBoxRightAxisXKeyDefault; 																																	/// <summary>Is the Right X's Axis set as default?.</summary>
-	private static bool XBoxLeftTriggerKeyDefault; 																																	/// <summary>Is the Left Trigger's Axis set as default?.</summary>
-	private static bool XBoxRightTriggerXKeyDefault; 																																/// <summary>Is the Right Trigger's Axis set as default?.</summary>
-	private static bool XBoxDPadAxisYKeyDefault; 																																	/// <summary>Is the D-Pad Y's Axis set as default?.</summary>
-	private static bool XBoxDPadAxisXKeyDefault; 																																	/// <summary>Is the D-Pad X's Axis set as default?.</summary>
+	public static InputMappingWindow inputMappingWindow;
+	private static InputMapping inputMapping;
+	private static TextAsset file;
+	private static Vector2 verticalScrollPosition;
+	private static bool XBoxLeftAxisYKeyDefault;
+	private static bool XBoxLeftAxisXKeyDefault;
+	private static bool XBoxRightAxisYKeyDefault;
+	private static bool XBoxRightAxisXKeyDefault;
+	private static bool XBoxLeftTriggerKeyDefault;
+	private static bool XBoxRightTriggerXKeyDefault;
+	private static bool XBoxDPadAxisYKeyDefault;
+	private static bool XBoxDPadAxisXKeyDefault;
 
 	/// <summary>Creates a new InputMappingWindow window.</summary>
 	/// <returns>Created InputMappingWindow window.</summary>
-	[MenuItem(VString.PATH_ROOT_VOIDLESS_TOOLS + INPUTMAPPINGWINDOW_PATH)]
+	[MenuItem("Voidless/Input Mapping")]
 	public static InputMappingWindow CreateInputMappingWindow()
 	{
 		inputMappingWindow = GetWindow<InputMappingWindow>("Input Mapping");

@@ -11,6 +11,31 @@ namespace Voidless
 public static class VDictionary
 {
 #region Dictionaries:
+	/// <summary>Copies Dictionary Entries from B into A.</summary>
+	/// <param name="a">Dictionary A.</param>
+	/// <param name="b">Dictionary B.</param>
+	public static void CopyFrom<K, V>(this Dictionary<K, V> a, Dictionary<K, V> b)
+	{
+		if(a == null || b == null) return;
+
+		a.Clear();
+
+		foreach(KeyValuePair<K, V> pair in b)
+		{
+			a.Add(pair.Key, pair.Value);
+		}
+	}
+
+	/// <summary>Sets value into dictionary [internally evaluates if key is contained].</summary>
+	/// <param name="_dictionary">Dictionary's reference.</param>
+	/// <param name="_key">Key.</param>
+	/// <param name="_value">Value to set.</param>
+	public static void Set<K, V>(this Dictionary<K, V> _dictionary, K _key, V _value)
+	{
+		if(_dictionary == null || !_dictionary.ContainsKey(_key)) return;
+		_dictionary[_key] = _value;
+	}
+
 	/// <returns>Random Dictionary Element.</returns>
 	public static KeyValuePair<K, V> RandomElement<K, V>(this Dictionary<K, V> _dictionary)
 	{

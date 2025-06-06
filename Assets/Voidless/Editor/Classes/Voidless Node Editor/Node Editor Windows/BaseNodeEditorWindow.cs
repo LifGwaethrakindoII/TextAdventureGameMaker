@@ -30,7 +30,7 @@ where T : BaseNodeData<I>
 #region Constants:
 	public const string NO_TEXT = ""; 										                                                                /// <summary>No Text.</summary>
 	public const string WINDOW_LOADING_MESSAGE = "Loading..."; 				                                                                /// <summary>Loading in background message.</summary>
-	public const string WINDOW_ROOT_PATH = "Window/Node Editors/"; 			                                                                /// <summary>Node Editor's options location on the menu bar.</summary>
+	public const string WINDOW_ROOT_PATH = "Voidless/Node Editors/"; 			                                                                /// <summary>Node Editor's options location on the menu bar.</summary>
 	public const string WINDOW_PANEL_DATA_FIELD = "Node Editor Data: ";		                                                                /// <summary>Node Editor Data Field ID.</summary>
 	public const string WINDOW_PANEL_GAME_DATA_FIELD = "Game Node Data: ";
     public const string WINDOW_PANEL_LOAD_BUTTON = "Load"; 					                                                                /// <summary>Load Button's Text.</summary>

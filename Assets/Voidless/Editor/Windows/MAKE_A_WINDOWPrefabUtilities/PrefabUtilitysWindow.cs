@@ -5,13 +5,9 @@ using UnityEditor;
 
 public class PrefabUtilitysWindow : EditorWindow
 {
-	protected const string PREFABUTILITYSWINDOW_PATH = "Voidless Tools/Windows/ PrefabUtilitysWindow's"; 	/// <summary>PrefabUtilitysWindow's path.</summary>
-
-	public static PrefabUtilitysWindow prefabUtilitysWindow;                                        /// <summary>PrefabUtilitysWindow's static reference</summary>
-
-
-	[SerializeField] private GameObject _prefab;                                        /// <summary>Prefab to substitute the selected game objects</summary>
-	private Vector2 _scrollPos;                                                         /// <summary>Position of the scroll view of selected gameObjects</summary>
+	public static PrefabUtilitysWindow prefabUtilitysWindow;
+	[SerializeField] private GameObject _prefab;
+	private Vector2 _scrollPos;
 	
 
 	#region Geters/ Seters
@@ -26,7 +22,7 @@ public class PrefabUtilitysWindow : EditorWindow
 
 	/// <summary>Creates a new PrefabUtilitysWindow window.</summary>
 	/// <returns>Created PrefabUtilitysWindow window.</summary>
-	[MenuItem(PREFABUTILITYSWINDOW_PATH)]
+	[MenuItem("Voidless/Windows/PrefabUtilitysWindow's")]
 	public static PrefabUtilitysWindow CreatePrefabUtilitysWindow()
 	{
 		prefabUtilitysWindow = GetWindow<PrefabUtilitysWindow>("Prefab's Utility");

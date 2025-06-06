@@ -22,7 +22,7 @@ public enum LevelFlowNodeTypes
 public class LevelFlowNodeEditorWindow : BaseNodeEditorWindow<BaseLevelFlowNode, LevelFlowNodeEditorData, LevelFlowNodeEditorAttributes, LevelFlowNodeData, ILevelFlowNode>
 {
 	private const string WINDOW_NAME = "Level Flow Editor";
-	private const string WINDOW_PATH = WINDOW_ROOT_PATH + WINDOW_NAME;
+	private const string WINDOW_PATH = "Voidless/Node Editors/Level Flow Editor";
 	private const string WINDOW_ROOT_EXISTS_TITLE = "There is already a Root Node on window!";
 	private const string WINDOW_ROOT_EXISTS_MESSAGE = "There is already a Root Node on the window. There can only be one Root per level flow tree";
 
@@ -45,7 +45,7 @@ public class LevelFlowNodeEditorWindow : BaseNodeEditorWindow<BaseLevelFlowNode,
 		set { _root = value; }
 	}
 
-	[MenuItem(WINDOW_PATH)]
+	[MenuItem("Voidless/Node Editors/Level Flow Editor")]
 	public static new BaseNodeEditorWindow<BaseLevelFlowNode, LevelFlowNodeEditorData, LevelFlowNodeEditorAttributes, LevelFlowNodeData, ILevelFlowNode> CreateNodeEditorWindow()
 	{
 		levelFlowNodeEditorWindow = GetWindow<LevelFlowNodeEditorWindow>(false, WINDOW_NAME);

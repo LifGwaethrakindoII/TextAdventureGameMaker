@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e59400701e2cbb146a14c9bed9d9d952, type: 3}
   m_Name: GameData_0
   m_EditorClassIdentifier: 
+  _nodeGraph: {fileID: 11400000, guid: 34771dfd7c79e9b4fb5e65d709c0ebcf, type: 2}
   _parserData:
     _verbs: []
     _nouns: []
     _adjectives: []
     _articles: []
+  _typingDuration: 0.15

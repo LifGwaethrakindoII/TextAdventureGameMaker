@@ -7,14 +7,12 @@ namespace Voidless
 {
 public class VEditorDataWindow : EditorWindow
 {
-	protected const string VOIDLESSEDITORDATAWINDOW_PATH = "Voidless Tools/Editor's Data"; 	/// <summary>VEditorDataWindow's path.</summary>
-
-	public static VEditorDataWindow voidlessEditorDataWindow; 								/// <summary>VEditorDataWindow's static reference</summary>
+	public static VEditorDataWindow voidlessEditorDataWindow;
 	private static SerializedProperty editorDictionary;
 
 	/// <summary>Creates a new VEditorDataWindow window.</summary>
 	/// <returns>Created VEditorDataWindow window.</summary>
-	[MenuItem(VOIDLESSEDITORDATAWINDOW_PATH)]
+	[MenuItem("Voidless/Editor's Data")]
 	public static VEditorDataWindow CreateVEditorDataWindow()
 	{
 		voidlessEditorDataWindow = GetWindow<VEditorDataWindow>("Editor's Data");

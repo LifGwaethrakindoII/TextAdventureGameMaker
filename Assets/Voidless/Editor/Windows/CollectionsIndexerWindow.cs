@@ -10,14 +10,12 @@ namespace Voidless
 {
 public class CollectionsIndexerWindow : EditorWindow
 {
-	protected const string COLLECTIONSINDEXERWINDOW_PATH = "Voidless Tools/ Collections' Indexer Window"; 	/// <summary>CollectionsIndexerWindow's path.</summary>
-
-	public static CollectionsIndexerWindow collectionsIndexerWindow; 										/// <summary>CollectionsIndexerWindow's static reference</summary>
+	public static CollectionsIndexerWindow collectionsIndexerWindow;
 	public static Vector2 scrollPosition;
 
 	/// <summary>Creates a new CollectionsIndexerWindow window.</summary>
 	/// <returns>Created CollectionsIndexerWindow window.</summary>
-	[MenuItem(COLLECTIONSINDEXERWINDOW_PATH)]
+	[MenuItem("Voidless/ Collections' Indexer Window")]
 	public static CollectionsIndexerWindow CreateCollectionsIndexerWindow()
 	{
 		collectionsIndexerWindow = GetWindow<CollectionsIndexerWindow>("Collections' Indexer");

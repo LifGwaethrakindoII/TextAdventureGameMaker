@@ -1,0 +1,3152 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Node",
+				"NodeResult"
+			],
+			[
+				"Text",
+				"TextAdventureNode"
+			],
+			[
+				"_va",
+				"_value"
+			],
+			[
+				"Ins",
+				"Instance"
+			],
+			[
+				"setter",
+				"setters"
+			],
+			[
+				"intS",
+				"intSetter"
+			],
+			[
+				"game",
+				"gameData"
+			],
+			[
+				"Ser",
+				"SerializeField"
+			],
+			[
+				"node",
+				"nodePort"
+			],
+			[
+				"flo",
+				"float"
+			],
+			[
+				"sett",
+				"setterNode"
+			],
+			[
+				"dialo",
+				"dialogueNode"
+			],
+			[
+				"Sea",
+				"Serializable"
+			],
+			[
+				"input",
+				"inputField"
+			],
+			[
+				"Trans",
+				"Transparent"
+			],
+			[
+				"text",
+				"textPool"
+			],
+			[
+				"Game",
+				"GameObjectPool"
+			],
+			[
+				"word",
+				"wordCategoryMap"
+			],
+			[
+				"wordCate",
+				"wordCategoryMap"
+			],
+			[
+				"wordCa",
+				"wordCategoryMap"
+			],
+			[
+				"arti",
+				"Article"
+			],
+			[
+				"Serial",
+				"SerializableDictionary"
+			],
+			[
+				"Recor",
+				"RecorderWindow"
+			],
+			[
+				"Dialo",
+				"dialogue"
+			],
+			[
+				"curre",
+				"currentNode"
+			],
+			[
+				"choi",
+				"choice"
+			],
+			[
+				"Choi",
+				"DialogueChoiceNode"
+			],
+			[
+				"curren",
+				"currentNode"
+			],
+			[
+				"Select",
+				"SelectChoice"
+			],
+			[
+				"Dialogu",
+				"DialogueChoiceNode"
+			],
+			[
+				"lef",
+				"leftAxes"
+			],
+			[
+				"Vec",
+				"Vector2"
+			],
+			[
+				"RightSh",
+				"RightShoulder2"
+			],
+			[
+				"Right",
+				"RightShoulder1"
+			],
+			[
+				"leftshou",
+				"LeftShoulder2"
+			],
+			[
+				"Left",
+				"LeftShoulder1"
+			],
+			[
+				"DPadL",
+				"DPadLeft"
+			],
+			[
+				"Controller",
+				"ControllerInputEvent"
+			],
+			[
+				"Di",
+				"DialogueChoiceNode"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"choice",
+				"choiceTexts"
+			],
+			[
+				"Set",
+				"SetActive"
+			],
+			[
+				"Gamepla",
+				"GameplayUIController"
+			],
+			[
+				"Dialog",
+				"DialogueNode"
+			],
+			[
+				"_dialogu",
+				"_dialogueNode"
+			],
+			[
+				"_dialo",
+				"_dialogueNode"
+			],
+			[
+				"currentChoi",
+				"currentChoiceNode"
+			],
+			[
+				"current",
+				"currentChoices"
+			],
+			[
+				"Choice",
+				"DialogueChoiceNode"
+			],
+			[
+				"Has",
+				"HasChoiceWithID"
+			],
+			[
+				"IE",
+				"IEnumerator"
+			],
+			[
+				"Dial",
+				"DialogueNode"
+			],
+			[
+				"Dia",
+				"DialogueNode"
+			],
+			[
+				"Seria",
+				"SerializeField"
+			],
+			[
+				"Sr",
+				"SerializeField"
+			],
+			[
+				"_childr",
+				"_children"
+			],
+			[
+				"Appe",
+				"AppendLine"
+			],
+			[
+				"PREF",
+				"PREFIX_INPUT"
+			],
+			[
+				"OUT",
+				"PREFIX_OUTPUT"
+			],
+			[
+				"typ",
+				"typingText"
+			],
+			[
+				"ty",
+				"typingIndex"
+			],
+			[
+				"t",
+				"typingText"
+			],
+			[
+				"typi",
+				"typing"
+			],
+			[
+				"typing",
+				"typingQueue"
+			],
+			[
+				"Window",
+				"CreateTextConsoleWindow"
+			],
+			[
+				"Edit",
+				"EditorApplication"
+			],
+			[
+				"Editor",
+				"EditorApplication"
+			],
+			[
+				"Secon",
+				"SecondsDelayWait"
+			],
+			[
+				"Mo",
+				"MoveNext"
+			],
+			[
+				"Dialogue",
+				"DialogueText"
+			],
+			[
+				"typingCo",
+				"typingCoroutine"
+			],
+			[
+				"Sho",
+				"ShowDialogueCoroutine"
+			],
+			[
+				"Nu",
+				"IsNullOrEmpty"
+			],
+			[
+				"Tex",
+				"TextCategory"
+			],
+			[
+				"STATE",
+				"STATE_FLAG_TARGETOCCLUDED"
+			],
+			[
+				"raycas",
+				"raycastInfo"
+			],
+			[
+				"VCam",
+				"VCameraRaycastingOrigin"
+			],
+			[
+				"VCA",
+				"VCameraRaycastingOrigin"
+			],
+			[
+				"reach",
+				"reachedTarget"
+			],
+			[
+				"Speed",
+				"SpeedScalar"
+			],
+			[
+				"desire",
+				"desiredOrientation"
+			],
+			[
+				"acce",
+				"acceleration"
+			],
+			[
+				"r",
+				"rotation"
+			],
+			[
+				"tar",
+				"targetOrientation"
+			],
+			[
+				"def",
+				"defaultTarget"
+			],
+			[
+				"target",
+				"targetRetrieverModule"
+			],
+			[
+				"defa",
+				"defaultTarget"
+			],
+			[
+				"follo",
+				"followMode"
+			],
+			[
+				"curr",
+				"currentDistance"
+			],
+			[
+				"insis",
+				"insistIfInstanceIsNull"
+			],
+			[
+				"dista",
+				"distance"
+			],
+			[
+				"Distan",
+				"VCameraDistanceCalculatorModule"
+			],
+			[
+				"Camera",
+				"CameraStates"
+			],
+			[
+				"Ges",
+				"GetTargetDistance"
+			],
+			[
+				"desi",
+				"desiredOrientation"
+			],
+			[
+				"des",
+				"desiredDisplacement"
+			],
+			[
+				"ALP",
+				"ALPHA_COLOR"
+			],
+			[
+				"targ",
+				"targetBounds"
+			],
+			[
+				"GetTar",
+				"GetTargetRotation"
+			],
+			[
+				"GetTarget",
+				"GetTargetPosition"
+			],
+			[
+				"D",
+				"DrawRay"
+			],
+			[
+				"cent",
+				"centerRay"
+			],
+			[
+				"Ra",
+				"Ray"
+			],
+			[
+				"distance",
+				"distanceAdjusterModule"
+			],
+			[
+				"displace",
+				"displacementFollowModule"
+			],
+			[
+				"Draw",
+				"DrawGizmos"
+			],
+			[
+				"occlu",
+				"occlusionEvaluatorModule"
+			],
+			[
+				"Enable",
+				"EnableTargetRetrieverModule"
+			],
+			[
+				"targe",
+				"targetRetrieverModule"
+			],
+			[
+				"displa",
+				"displacementFollowModule"
+			],
+			[
+				"spee",
+				"speedChange"
+			],
+			[
+				"Acce",
+				"AccelerateTowards"
+			],
+			[
+				"tryupdate",
+				"TryUpdatingDistanceAdjusterModule"
+			],
+			[
+				"tryup",
+				"TryUpdatingTargetRetrieverModule"
+			],
+			[
+				"Update",
+				"UpdateModules"
+			],
+			[
+				"trans",
+				"transparentRed"
+			],
+			[
+				"VCameraDis",
+				"VCameraDistanceAdjusterModule"
+			],
+			[
+				"occluso",
+				"_occlusionModule"
+			],
+			[
+				"targetR",
+				"_targetRetrieverModule"
+			],
+			[
+				"rotation",
+				"rotationFollowModule"
+			],
+			[
+				"VCameraR",
+				"VCameraRotationFollowModule"
+			],
+			[
+				"enal",
+				"_enabledModules"
+			],
+			[
+				"VC",
+				"VCamera"
+			],
+			[
+				"V",
+				"VVector3"
+			],
+			[
+				"_",
+				"_camera"
+			],
+			[
+				"PATH_",
+				"PATH_FOLLOWMODULE"
+			],
+			[
+				"PATH",
+				"PATH_ROTATIONFOLLOWMODULE"
+			],
+			[
+				"VCa",
+				"VCamera"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Okay, let me try to answer:\n\n1.- I am using Unity, C#\n2.- Maybe not strictly behavior tree nodes, but custom nodes that inherit from a base XNode class that comes from another repository from another person (to make custom node editor tools). This is the base class:\n\nusing System.Collections;\nusing System;\nusing System.Collections.Generic;\nusing UnityEngine;\n\nnamespace Voidless.TextAdventureMaker\n{\npublic enum NodeType { Undefined, Dialogue, Condition, Connection, Setter, Selector, Sequencer }\n\npublic enum NodeResult { Undefined, Success, Running, Failure, Error }\n\n[Serializable]\npublic abstract class TextAdventureNode\n{\n    public ConnectionNode connectionNode;\n    public DialogueNode dialogueNode;\n    public ConditionNode conditionNode;\n    public SetterNode setterNode;\n    public TextAdventureNode next;\n\n    /// <returns>Node Type.</returns>\n    public abstract NodeType GetNodeType();\n\n    /// <summary>Sets Next Node.</summary>\n    /// <param name=\"node\">Next Node</param>\n    public void SetNextNode(TextAdventureNode node)\n    {\n        if (node == null) return;\n\n        next = node;\n        connectionNode = null;\n        dialogueNode = null;\n        conditionNode = null;\n        setterNode = null;\n\n        switch (node.GetNodeType())\n        {\n            case NodeType.Dialogue:\n                dialogueNode = node as DialogueNode;\n            break;\n\n            case NodeType.Condition:\n                conditionNode = node as ConditionNode;\n            break;\n\n            case NodeType.Connection:\n                connectionNode = node as ConnectionNode;\n            break;\n\n            case NodeType.Setter:\n                setterNode = node as SetterNode;\n            break;\n\n            case NodeType.Undefined:\n            default:\n                Debug.Log(\"Node with uncompatible node type \" + node.GetNodeType().ToString() + \" was provided.\");\n            break;\n        }\n    }\n\n    public TextAdventureNode(TextAdventureNode node)\n    {\n        SetNextNode(node);\n    }\n\n    /// <summary>Excecutes Node.</summary>\n    public virtual NodeResult Excecute()\n    {\n        switch (next.GetNodeType())\n        {\n            case NodeType.Dialogue:     return dialogueNode.Excecute();\n            case NodeType.Condition:    return conditionNode.Excecute();\n            case NodeType.Connection:   return connectionNode.Excecute();\n            case NodeType.Undefined:\n            default:                    return NodeResult.Error;\n        }\n    }\n}\n}\n\n3.-A Blackboard sounds like a good idea. I have a Blackboard already implemented that I could use.\n\nSnippet of the DialogueNodeX:\n\n[Serializable]\n    public class DialogueNodeX : TextAdventureNodeX\n    {\n        [Input] public ConnectionNodeX parentConnection;\n        [Output] public ConnectionNodeX[] connections;\n        public int ID;\n        [TextArea] public string dialogue;\n\nSnippet of ConnectionNodeX:\n\n[Serializable]\n    public class ConnectionNode : TextAdventureNode\n    {\n        public DialogueNode targetNode;\n        public List<string> validVerbs;\n\n        public ConnectionNode(TextAdventureNode node) : base(node)\n        {\n            targetNode = null;\n            validVerbs = new List<string>();\n        }\n\n        /// <returns>Node Type.</returns>\n        public override NodeType GetNodeType() { return NodeType.Connection; }\n    }",
+			"settings":
+			{
+				"buffer_size": 3343,
+				"line_ending": "Windows",
+				"name": "Okay, let me try to answer:"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert",
+					{
+						"characters": "Omka"
+					},
+					"BAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2,
+					3,
+					"left_delete",
+					null,
+					"AwAAAAMAAAAAAAAAAwAAAAAAAAABAAAAYQIAAAAAAAAAAgAAAAAAAAABAAAAawEAAAAAAAAAAQAAAAAAAAABAAAAbQ",
+					"AQAAAAAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "kay,"
+					},
+					"BAAAAAEAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAADAAAAAAAAAAAAAAADAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAABQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": " let"
+					},
+					"BAAAAAUAAAAAAAAABgAAAAAAAAAAAAAABgAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAACQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABQAAAAAAAAAFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": " me"
+					},
+					"AwAAAAkAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " try"
+					},
+					"BAAAAAwAAAAAAAAADQAAAAAAAAAAAAAADQAAAAAAAAAOAAAAAAAAAAAAAAAOAAAAAAAAAA8AAAAAAAAAAAAAAA8AAAAAAAAAEAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": " to"
+					},
+					"AwAAABAAAAAAAAAAEQAAAAAAAAAAAAAAEQAAAAAAAAASAAAAAAAAAAAAAAASAAAAAAAAABMAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": " answer:?"
+					},
+					"CQAAABMAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAVAAAAAAAAAAAAAAAVAAAAAAAAABYAAAAAAAAAAAAAABYAAAAAAAAAFwAAAAAAAAAAAAAAFwAAAAAAAAAYAAAAAAAAAAAAAAAYAAAAAAAAABkAAAAAAAAAAAAAABkAAAAAAAAAGgAAAAAAAAAAAAAAGgAAAAAAAAAbAAAAAAAAAAAAAAAbAAAAAAAAABwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEwAAAAAAAAATAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"left_delete",
+					null,
+					"AQAAABsAAAAAAAAAGwAAAAAAAAABAAAAPw",
+					"AQAAAAAAAAABAAAAHAAAAAAAAAAcAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": "\n\n1/-"
+					},
+					"BQAAABsAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAdAAAAAAAAAAAAAAAdAAAAAAAAAB4AAAAAAAAAAAAAAB4AAAAAAAAAHwAAAAAAAAAAAAAAHwAAAAAAAAAgAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGwAAAAAAAAAbAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAACAAAAAAAAAAIQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"left_delete",
+					null,
+					"AQAAAB4AAAAAAAAAHgAAAAAAAAABAAAALw",
+					"AQAAAAAAAAABAAAAHwAAAAAAAAAfAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AQAAAB4AAAAAAAAAHwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": " I"
+					},
+					"AgAAACAAAAAAAAAAIQAAAAAAAAAAAAAAIQAAAAAAAAAiAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": " am"
+					},
+					"AwAAACIAAAAAAAAAIwAAAAAAAAAAAAAAIwAAAAAAAAAkAAAAAAAAAAAAAAAkAAAAAAAAACUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": " using"
+					},
+					"BgAAACUAAAAAAAAAJgAAAAAAAAAAAAAAJgAAAAAAAAAnAAAAAAAAAAAAAAAnAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKQAAAAAAAAAAAAAAKQAAAAAAAAAqAAAAAAAAAAAAAAAqAAAAAAAAACsAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJQAAAAAAAAAlAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": " Unity,"
+					},
+					"BwAAACsAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAtAAAAAAAAAAAAAAAtAAAAAAAAAC4AAAAAAAAAAAAAAC4AAAAAAAAALwAAAAAAAAAAAAAALwAAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKwAAAAAAAAArAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": " c#"
+					},
+					"AwAAADIAAAAAAAAAMwAAAAAAAAAAAAAAMwAAAAAAAAA0AAAAAAAAAAAAAAA0AAAAAAAAADUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMgAAAAAAAAAyAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"left_delete",
+					null,
+					"AQAAADMAAAAAAAAAMwAAAAAAAAABAAAAYw",
+					"AQAAAAAAAAABAAAANAAAAAAAAAA0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"insert",
+					{
+						"characters": "C"
+					},
+					"AQAAADMAAAAAAAAANAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMwAAAAAAAAAzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "\n2.;-"
+					},
+					"BQAAADUAAAAAAAAANgAAAAAAAAAAAAAANgAAAAAAAAA3AAAAAAAAAAAAAAA3AAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAOQAAAAAAAAAAAAAAOQAAAAAAAAA6AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAANQAAAAAAAAA1AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"left_delete",
+					null,
+					"AQAAADgAAAAAAAAAOAAAAAAAAAABAAAAOw",
+					"AQAAAAAAAAABAAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": " Ye"
+					},
+					"AwAAADkAAAAAAAAAOgAAAAAAAAAAAAAAOgAAAAAAAAA7AAAAAAAAAAAAAAA7AAAAAAAAADwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert",
+					{
+						"characters": "s"
+					},
+					"AQAAADwAAAAAAAAAPQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPAAAAAAAAAA8AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					1,
+					"insert",
+					{
+						"characters": "Maybe"
+					},
+					"BQAAADoAAAAAAAAAOwAAAAAAAAAEAAAAWWVzIDsAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAAA9AAAAAAAAAAAAAAA9AAAAAAAAAD4AAAAAAAAAAAAAAD4AAAAAAAAAPwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPgAAAAAAAAA6AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"insert",
+					{
+						"characters": " not"
+					},
+					"BAAAAD8AAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAABBAAAAAAAAAAAAAABBAAAAAAAAAEIAAAAAAAAAAAAAAEIAAAAAAAAAQwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPwAAAAAAAAA/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					40,
+					1,
+					"insert",
+					{
+						"characters": " strictly"
+					},
+					"CQAAAEMAAAAAAAAARAAAAAAAAAAAAAAARAAAAAAAAABFAAAAAAAAAAAAAABFAAAAAAAAAEYAAAAAAAAAAAAAAEYAAAAAAAAARwAAAAAAAAAAAAAARwAAAAAAAABIAAAAAAAAAAAAAABIAAAAAAAAAEkAAAAAAAAAAAAAAEkAAAAAAAAASgAAAAAAAAAAAAAASgAAAAAAAABLAAAAAAAAAAAAAABLAAAAAAAAAEwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQwAAAAAAAABDAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					41,
+					1,
+					"insert",
+					{
+						"characters": " beha"
+					},
+					"BQAAAEwAAAAAAAAATQAAAAAAAAAAAAAATQAAAAAAAABOAAAAAAAAAAAAAABOAAAAAAAAAE8AAAAAAAAAAAAAAE8AAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABRAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATAAAAAAAAABMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					42,
+					1,
+					"insert",
+					{
+						"characters": "vior"
+					},
+					"BAAAAFEAAAAAAAAAUgAAAAAAAAAAAAAAUgAAAAAAAABTAAAAAAAAAAAAAABTAAAAAAAAAFQAAAAAAAAAAAAAAFQAAAAAAAAAVQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUQAAAAAAAABRAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					43,
+					1,
+					"insert",
+					{
+						"characters": " tree"
+					},
+					"BQAAAFUAAAAAAAAAVgAAAAAAAAAAAAAAVgAAAAAAAABXAAAAAAAAAAAAAABXAAAAAAAAAFgAAAAAAAAAAAAAAFgAAAAAAAAAWQAAAAAAAAAAAAAAWQAAAAAAAABaAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAVQAAAAAAAABVAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": " nodes,"
+					},
+					"BwAAAFoAAAAAAAAAWwAAAAAAAAAAAAAAWwAAAAAAAABcAAAAAAAAAAAAAABcAAAAAAAAAF0AAAAAAAAAAAAAAF0AAAAAAAAAXgAAAAAAAAAAAAAAXgAAAAAAAABfAAAAAAAAAAAAAABfAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAYQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWgAAAAAAAABaAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"insert",
+					{
+						"characters": " but"
+					},
+					"BAAAAGEAAAAAAAAAYgAAAAAAAAAAAAAAYgAAAAAAAABjAAAAAAAAAAAAAABjAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAAAAZQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYQAAAAAAAABhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					46,
+					1,
+					"insert",
+					{
+						"characters": " custom"
+					},
+					"BwAAAGUAAAAAAAAAZgAAAAAAAAAAAAAAZgAAAAAAAABnAAAAAAAAAAAAAABnAAAAAAAAAGgAAAAAAAAAAAAAAGgAAAAAAAAAaQAAAAAAAAAAAAAAaQAAAAAAAABqAAAAAAAAAAAAAABqAAAAAAAAAGsAAAAAAAAAAAAAAGsAAAAAAAAAbAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZQAAAAAAAABlAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"insert",
+					{
+						"characters": " nodes"
+					},
+					"BgAAAGwAAAAAAAAAbQAAAAAAAAAAAAAAbQAAAAAAAABuAAAAAAAAAAAAAABuAAAAAAAAAG8AAAAAAAAAAAAAAG8AAAAAAAAAcAAAAAAAAAAAAAAAcAAAAAAAAABxAAAAAAAAAAAAAABxAAAAAAAAAHIAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbAAAAAAAAABsAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"insert",
+					{
+						"characters": " th"
+					},
+					"AwAAAHIAAAAAAAAAcwAAAAAAAAAAAAAAcwAAAAAAAAB0AAAAAAAAAAAAAAB0AAAAAAAAAHUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcgAAAAAAAAByAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHQAAAAAAAAAdAAAAAAAAAABAAAAaA",
+					"AQAAAAAAAAABAAAAdQAAAAAAAAB1AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					58,
+					1,
+					"insert",
+					{
+						"characters": "hat"
+					},
+					"AwAAAHQAAAAAAAAAdQAAAAAAAAAAAAAAdQAAAAAAAAB2AAAAAAAAAAAAAAB2AAAAAAAAAHcAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdAAAAAAAAAB0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"insert",
+					{
+						"characters": " inherit"
+					},
+					"CAAAAHcAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAB5AAAAAAAAAAAAAAB5AAAAAAAAAHoAAAAAAAAAAAAAAHoAAAAAAAAAewAAAAAAAAAAAAAAewAAAAAAAAB8AAAAAAAAAAAAAAB8AAAAAAAAAH0AAAAAAAAAAAAAAH0AAAAAAAAAfgAAAAAAAAAAAAAAfgAAAAAAAAB/AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdwAAAAAAAAB3AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					60,
+					1,
+					"insert",
+					{
+						"characters": " froma"
+					},
+					"BgAAAH8AAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAACBAAAAAAAAAAAAAACBAAAAAAAAAIIAAAAAAAAAAAAAAIIAAAAAAAAAgwAAAAAAAAAAAAAAgwAAAAAAAACEAAAAAAAAAAAAAACEAAAAAAAAAIUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfwAAAAAAAAB/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					61,
+					1,
+					"insert",
+					{
+						"characters": "  "
+					},
+					"AgAAAIUAAAAAAAAAhgAAAAAAAAAAAAAAhgAAAAAAAACHAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhQAAAAAAAACFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					62,
+					3,
+					"left_delete",
+					null,
+					"AwAAAIYAAAAAAAAAhgAAAAAAAAABAAAAIIUAAAAAAAAAhQAAAAAAAAABAAAAIIQAAAAAAAAAhAAAAAAAAAABAAAAYQ",
+					"AQAAAAAAAAABAAAAhwAAAAAAAACHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					63,
+					1,
+					"insert",
+					{
+						"characters": "a"
+					},
+					"AQAAAIQAAAAAAAAAhQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhAAAAAAAAACEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAIUAAAAAAAAAhgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhQAAAAAAAACFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					65,
+					2,
+					"left_delete",
+					null,
+					"AgAAAIUAAAAAAAAAhQAAAAAAAAABAAAAIIQAAAAAAAAAhAAAAAAAAAABAAAAYQ",
+					"AQAAAAAAAAABAAAAhgAAAAAAAACGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					66,
+					1,
+					"insert",
+					{
+						"characters": " a"
+					},
+					"AgAAAIQAAAAAAAAAhQAAAAAAAAAAAAAAhQAAAAAAAACGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhAAAAAAAAACEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					67,
+					1,
+					"insert",
+					{
+						"characters": " base"
+					},
+					"BQAAAIYAAAAAAAAAhwAAAAAAAAAAAAAAhwAAAAAAAACIAAAAAAAAAAAAAACIAAAAAAAAAIkAAAAAAAAAAAAAAIkAAAAAAAAAigAAAAAAAAAAAAAAigAAAAAAAACLAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhgAAAAAAAACGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					68,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAIsAAAAAAAAAjAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAiwAAAAAAAACLAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					69,
+					1,
+					"insert",
+					{
+						"characters": "XNode"
+					},
+					"BQAAAIwAAAAAAAAAjQAAAAAAAAAAAAAAjQAAAAAAAACOAAAAAAAAAAAAAACOAAAAAAAAAI8AAAAAAAAAAAAAAI8AAAAAAAAAkAAAAAAAAAAAAAAAkAAAAAAAAACRAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjAAAAAAAAACMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					70,
+					1,
+					"insert",
+					{
+						"characters": " class"
+					},
+					"BgAAAJEAAAAAAAAAkgAAAAAAAAAAAAAAkgAAAAAAAACTAAAAAAAAAAAAAACTAAAAAAAAAJQAAAAAAAAAAAAAAJQAAAAAAAAAlQAAAAAAAAAAAAAAlQAAAAAAAACWAAAAAAAAAAAAAACWAAAAAAAAAJcAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkQAAAAAAAACRAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					71,
+					1,
+					"insert",
+					{
+						"characters": " that"
+					},
+					"BQAAAJcAAAAAAAAAmAAAAAAAAAAAAAAAmAAAAAAAAACZAAAAAAAAAAAAAACZAAAAAAAAAJoAAAAAAAAAAAAAAJoAAAAAAAAAmwAAAAAAAAAAAAAAmwAAAAAAAACcAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAlwAAAAAAAACXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					72,
+					1,
+					"insert",
+					{
+						"characters": " comes"
+					},
+					"BgAAAJwAAAAAAAAAnQAAAAAAAAAAAAAAnQAAAAAAAACeAAAAAAAAAAAAAACeAAAAAAAAAJ8AAAAAAAAAAAAAAJ8AAAAAAAAAoAAAAAAAAAAAAAAAoAAAAAAAAAChAAAAAAAAAAAAAAChAAAAAAAAAKIAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnAAAAAAAAACcAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					73,
+					1,
+					"insert",
+					{
+						"characters": " from"
+					},
+					"BQAAAKIAAAAAAAAAowAAAAAAAAAAAAAAowAAAAAAAACkAAAAAAAAAAAAAACkAAAAAAAAAKUAAAAAAAAAAAAAAKUAAAAAAAAApgAAAAAAAAAAAAAApgAAAAAAAACnAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAogAAAAAAAACiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"insert",
+					{
+						"characters": " a"
+					},
+					"AgAAAKcAAAAAAAAAqAAAAAAAAAAAAAAAqAAAAAAAAACpAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAApwAAAAAAAACnAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					75,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAAKkAAAAAAAAAqgAAAAAAAAAAAAAAqgAAAAAAAACrAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqQAAAAAAAACpAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					76,
+					2,
+					"left_delete",
+					null,
+					"AgAAAKoAAAAAAAAAqgAAAAAAAAABAAAAPakAAAAAAAAAqQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAqwAAAAAAAACrAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					77,
+					1,
+					"insert",
+					{
+						"characters": "nother"
+					},
+					"BgAAAKkAAAAAAAAAqgAAAAAAAAAAAAAAqgAAAAAAAACrAAAAAAAAAAAAAACrAAAAAAAAAKwAAAAAAAAAAAAAAKwAAAAAAAAArQAAAAAAAAAAAAAArQAAAAAAAACuAAAAAAAAAAAAAACuAAAAAAAAAK8AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqQAAAAAAAACpAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					78,
+					1,
+					"insert",
+					{
+						"characters": " repository"
+					},
+					"CwAAAK8AAAAAAAAAsAAAAAAAAAAAAAAAsAAAAAAAAACxAAAAAAAAAAAAAACxAAAAAAAAALIAAAAAAAAAAAAAALIAAAAAAAAAswAAAAAAAAAAAAAAswAAAAAAAAC0AAAAAAAAAAAAAAC0AAAAAAAAALUAAAAAAAAAAAAAALUAAAAAAAAAtgAAAAAAAAAAAAAAtgAAAAAAAAC3AAAAAAAAAAAAAAC3AAAAAAAAALgAAAAAAAAAAAAAALgAAAAAAAAAuQAAAAAAAAAAAAAAuQAAAAAAAAC6AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArwAAAAAAAACvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					79,
+					1,
+					"insert",
+					{
+						"characters": " fd"
+					},
+					"AwAAALoAAAAAAAAAuwAAAAAAAAAAAAAAuwAAAAAAAAC8AAAAAAAAAAAAAAC8AAAAAAAAAL0AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAugAAAAAAAAC6AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					80,
+					1,
+					"left_delete",
+					null,
+					"AQAAALwAAAAAAAAAvAAAAAAAAAABAAAAZA",
+					"AQAAAAAAAAABAAAAvQAAAAAAAAC9AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					81,
+					1,
+					"insert",
+					{
+						"characters": "rom"
+					},
+					"AwAAALwAAAAAAAAAvQAAAAAAAAAAAAAAvQAAAAAAAAC+AAAAAAAAAAAAAAC+AAAAAAAAAL8AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvAAAAAAAAAC8AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					82,
+					1,
+					"insert",
+					{
+						"characters": " another"
+					},
+					"CAAAAL8AAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAADBAAAAAAAAAAAAAADBAAAAAAAAAMIAAAAAAAAAAAAAAMIAAAAAAAAAwwAAAAAAAAAAAAAAwwAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMUAAAAAAAAAAAAAAMUAAAAAAAAAxgAAAAAAAAAAAAAAxgAAAAAAAADHAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwAAAAAAAAC/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					83,
+					1,
+					"insert",
+					{
+						"characters": " poerson"
+					},
+					"CAAAAMcAAAAAAAAAyAAAAAAAAAAAAAAAyAAAAAAAAADJAAAAAAAAAAAAAADJAAAAAAAAAMoAAAAAAAAAAAAAAMoAAAAAAAAAywAAAAAAAAAAAAAAywAAAAAAAADMAAAAAAAAAAAAAADMAAAAAAAAAM0AAAAAAAAAAAAAAM0AAAAAAAAAzgAAAAAAAAAAAAAAzgAAAAAAAADPAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxwAAAAAAAADHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					85,
+					1,
+					"insert",
+					{
+						"characters": "person"
+					},
+					"BgAAAMgAAAAAAAAAyQAAAAAAAAAHAAAAcG9lcnNvbskAAAAAAAAAygAAAAAAAAAAAAAAygAAAAAAAADLAAAAAAAAAAAAAADLAAAAAAAAAMwAAAAAAAAAAAAAAMwAAAAAAAAAzQAAAAAAAAAAAAAAzQAAAAAAAADOAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzwAAAAAAAADIAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					86,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAM4AAAAAAAAAzwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzgAAAAAAAADOAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					87,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAM8AAAAAAAAA0QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzwAAAAAAAADPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					90,
+					1,
+					"insert",
+					{
+						"characters": "to"
+					},
+					"AgAAANAAAAAAAAAA0QAAAAAAAAAAAAAA0QAAAAAAAADSAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0AAAAAAAAADQAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					91,
+					1,
+					"insert",
+					{
+						"characters": " make"
+					},
+					"BQAAANIAAAAAAAAA0wAAAAAAAAAAAAAA0wAAAAAAAADUAAAAAAAAAAAAAADUAAAAAAAAANUAAAAAAAAAAAAAANUAAAAAAAAA1gAAAAAAAAAAAAAA1gAAAAAAAADXAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0gAAAAAAAADSAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					92,
+					1,
+					"insert",
+					{
+						"characters": " custom"
+					},
+					"BwAAANcAAAAAAAAA2AAAAAAAAAAAAAAA2AAAAAAAAADZAAAAAAAAAAAAAADZAAAAAAAAANoAAAAAAAAAAAAAANoAAAAAAAAA2wAAAAAAAAAAAAAA2wAAAAAAAADcAAAAAAAAAAAAAADcAAAAAAAAAN0AAAAAAAAAAAAAAN0AAAAAAAAA3gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1wAAAAAAAADXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					93,
+					1,
+					"insert",
+					{
+						"characters": " node"
+					},
+					"BQAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA3wAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAOEAAAAAAAAAAAAAAOEAAAAAAAAA4gAAAAAAAAAAAAAA4gAAAAAAAADjAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gAAAAAAAADeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					94,
+					1,
+					"insert",
+					{
+						"characters": " editor"
+					},
+					"BwAAAOMAAAAAAAAA5AAAAAAAAAAAAAAA5AAAAAAAAADlAAAAAAAAAAAAAADlAAAAAAAAAOYAAAAAAAAAAAAAAOYAAAAAAAAA5wAAAAAAAAAAAAAA5wAAAAAAAADoAAAAAAAAAAAAAADoAAAAAAAAAOkAAAAAAAAAAAAAAOkAAAAAAAAA6gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4wAAAAAAAADjAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					95,
+					1,
+					"insert",
+					{
+						"characters": " tools."
+					},
+					"BwAAAOoAAAAAAAAA6wAAAAAAAAAAAAAA6wAAAAAAAADsAAAAAAAAAAAAAADsAAAAAAAAAO0AAAAAAAAAAAAAAO0AAAAAAAAA7gAAAAAAAAAAAAAA7gAAAAAAAADvAAAAAAAAAAAAAADvAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAAA8QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6gAAAAAAAADqAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					96,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPAAAAAAAAAA8AAAAAAAAAABAAAALg",
+					"AQAAAAAAAAABAAAA8QAAAAAAAADxAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					98,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AQAAAPEAAAAAAAAA8gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8QAAAAAAAADxAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					101,
+					1,
+					"insert",
+					{
+						"characters": " This"
+					},
+					"BQAAAPIAAAAAAAAA8wAAAAAAAAAAAAAA8wAAAAAAAAD0AAAAAAAAAAAAAAD0AAAAAAAAAPUAAAAAAAAAAAAAAPUAAAAAAAAA9gAAAAAAAAAAAAAA9gAAAAAAAAD3AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8gAAAAAAAADyAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					102,
+					1,
+					"insert",
+					{
+						"characters": " is"
+					},
+					"AwAAAPcAAAAAAAAA+AAAAAAAAAAAAAAA+AAAAAAAAAD5AAAAAAAAAAAAAAD5AAAAAAAAAPoAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9wAAAAAAAAD3AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					103,
+					1,
+					"insert",
+					{
+						"characters": " the"
+					},
+					"BAAAAPoAAAAAAAAA+wAAAAAAAAAAAAAA+wAAAAAAAAD8AAAAAAAAAAAAAAD8AAAAAAAAAP0AAAAAAAAAAAAAAP0AAAAAAAAA/gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+gAAAAAAAAD6AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					104,
+					1,
+					"insert",
+					{
+						"characters": " base"
+					},
+					"BQAAAP4AAAAAAAAA/wAAAAAAAAAAAAAA/wAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAEBAAAAAAAAAAAAAAEBAAAAAAAAAgEAAAAAAAAAAAAAAgEAAAAAAAADAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/gAAAAAAAAD+AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					105,
+					1,
+					"insert",
+					{
+						"characters": " class:"
+					},
+					"BwAAAAMBAAAAAAAABAEAAAAAAAAAAAAABAEAAAAAAAAFAQAAAAAAAAAAAAAFAQAAAAAAAAYBAAAAAAAAAAAAAAYBAAAAAAAABwEAAAAAAAAAAAAABwEAAAAAAAAIAQAAAAAAAAAAAAAIAQAAAAAAAAkBAAAAAAAAAAAAAAkBAAAAAAAACgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAwEAAAAAAAADAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					106,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAAoBAAAAAAAACwEAAAAAAAAAAAAACwEAAAAAAAAMAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACgEAAAAAAAAKAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					107,
+					1,
+					"paste",
+					null,
+					"AQAAAAwBAAAAAAAAtQkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADAEAAAAAAAAMAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					108,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAALUJAAAAAAAAtgkAAAAAAAAAAAAAtgkAAAAAAAC3CQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtQkAAAAAAAC1CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					111,
+					1,
+					"insert",
+					{
+						"characters": "3.-"
+					},
+					"AwAAALcJAAAAAAAAuAkAAAAAAAAAAAAAuAkAAAAAAAC5CQAAAAAAAAAAAAC5CQAAAAAAALoJAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtwkAAAAAAAC3CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					112,
+					1,
+					"insert",
+					{
+						"characters": "A"
+					},
+					"AQAAALoJAAAAAAAAuwkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAugkAAAAAAAC6CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					113,
+					1,
+					"insert",
+					{
+						"characters": " Blackboard"
+					},
+					"CwAAALsJAAAAAAAAvAkAAAAAAAAAAAAAvAkAAAAAAAC9CQAAAAAAAAAAAAC9CQAAAAAAAL4JAAAAAAAAAAAAAL4JAAAAAAAAvwkAAAAAAAAAAAAAvwkAAAAAAADACQAAAAAAAAAAAADACQAAAAAAAMEJAAAAAAAAAAAAAMEJAAAAAAAAwgkAAAAAAAAAAAAAwgkAAAAAAADDCQAAAAAAAAAAAADDCQAAAAAAAMQJAAAAAAAAAAAAAMQJAAAAAAAAxQkAAAAAAAAAAAAAxQkAAAAAAADGCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuwkAAAAAAAC7CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					114,
+					1,
+					"insert",
+					{
+						"characters": " sounds"
+					},
+					"BwAAAMYJAAAAAAAAxwkAAAAAAAAAAAAAxwkAAAAAAADICQAAAAAAAAAAAADICQAAAAAAAMkJAAAAAAAAAAAAAMkJAAAAAAAAygkAAAAAAAAAAAAAygkAAAAAAADLCQAAAAAAAAAAAADLCQAAAAAAAMwJAAAAAAAAAAAAAMwJAAAAAAAAzQkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgkAAAAAAADGCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					115,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAM0JAAAAAAAAzgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzQkAAAAAAADNCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					116,
+					1,
+					"left_delete",
+					null,
+					"AQAAAM0JAAAAAAAAzQkAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAzgkAAAAAAADOCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					117,
+					1,
+					"insert",
+					{
+						"characters": "l"
+					},
+					"AQAAAM0JAAAAAAAAzgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzQkAAAAAAADNCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					118,
+					1,
+					"left_delete",
+					null,
+					"AQAAAM0JAAAAAAAAzQkAAAAAAAABAAAAbA",
+					"AQAAAAAAAAABAAAAzgkAAAAAAADOCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					119,
+					1,
+					"insert",
+					{
+						"characters": " like"
+					},
+					"BQAAAM0JAAAAAAAAzgkAAAAAAAAAAAAAzgkAAAAAAADPCQAAAAAAAAAAAADPCQAAAAAAANAJAAAAAAAAAAAAANAJAAAAAAAA0QkAAAAAAAAAAAAA0QkAAAAAAADSCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzQkAAAAAAADNCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					120,
+					1,
+					"insert",
+					{
+						"characters": " a"
+					},
+					"AgAAANIJAAAAAAAA0wkAAAAAAAAAAAAA0wkAAAAAAADUCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0gkAAAAAAADSCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					121,
+					1,
+					"insert",
+					{
+						"characters": " good"
+					},
+					"BQAAANQJAAAAAAAA1QkAAAAAAAAAAAAA1QkAAAAAAADWCQAAAAAAAAAAAADWCQAAAAAAANcJAAAAAAAAAAAAANcJAAAAAAAA2AkAAAAAAAAAAAAA2AkAAAAAAADZCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1AkAAAAAAADUCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					122,
+					1,
+					"insert",
+					{
+						"characters": " idea."
+					},
+					"BgAAANkJAAAAAAAA2gkAAAAAAAAAAAAA2gkAAAAAAADbCQAAAAAAAAAAAADbCQAAAAAAANwJAAAAAAAAAAAAANwJAAAAAAAA3QkAAAAAAAAAAAAA3QkAAAAAAADeCQAAAAAAAAAAAADeCQAAAAAAAN8JAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2QkAAAAAAADZCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					123,
+					1,
+					"insert",
+					{
+						"characters": " I"
+					},
+					"AgAAAN8JAAAAAAAA4AkAAAAAAAAAAAAA4AkAAAAAAADhCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3wkAAAAAAADfCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					124,
+					1,
+					"insert",
+					{
+						"characters": " have"
+					},
+					"BQAAAOEJAAAAAAAA4gkAAAAAAAAAAAAA4gkAAAAAAADjCQAAAAAAAAAAAADjCQAAAAAAAOQJAAAAAAAAAAAAAOQJAAAAAAAA5QkAAAAAAAAAAAAA5QkAAAAAAADmCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4QkAAAAAAADhCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					125,
+					1,
+					"insert",
+					{
+						"characters": " a"
+					},
+					"AgAAAOYJAAAAAAAA5wkAAAAAAAAAAAAA5wkAAAAAAADoCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5gkAAAAAAADmCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					126,
+					1,
+					"insert",
+					{
+						"characters": " Blackboard"
+					},
+					"CwAAAOgJAAAAAAAA6QkAAAAAAAAAAAAA6QkAAAAAAADqCQAAAAAAAAAAAADqCQAAAAAAAOsJAAAAAAAAAAAAAOsJAAAAAAAA7AkAAAAAAAAAAAAA7AkAAAAAAADtCQAAAAAAAAAAAADtCQAAAAAAAO4JAAAAAAAAAAAAAO4JAAAAAAAA7wkAAAAAAAAAAAAA7wkAAAAAAADwCQAAAAAAAAAAAADwCQAAAAAAAPEJAAAAAAAAAAAAAPEJAAAAAAAA8gkAAAAAAAAAAAAA8gkAAAAAAADzCQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6AkAAAAAAADoCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					127,
+					1,
+					"insert",
+					{
+						"characters": " already"
+					},
+					"CAAAAPMJAAAAAAAA9AkAAAAAAAAAAAAA9AkAAAAAAAD1CQAAAAAAAAAAAAD1CQAAAAAAAPYJAAAAAAAAAAAAAPYJAAAAAAAA9wkAAAAAAAAAAAAA9wkAAAAAAAD4CQAAAAAAAAAAAAD4CQAAAAAAAPkJAAAAAAAAAAAAAPkJAAAAAAAA+gkAAAAAAAAAAAAA+gkAAAAAAAD7CQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8wkAAAAAAADzCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					128,
+					1,
+					"insert",
+					{
+						"characters": " implemented"
+					},
+					"DAAAAPsJAAAAAAAA/AkAAAAAAAAAAAAA/AkAAAAAAAD9CQAAAAAAAAAAAAD9CQAAAAAAAP4JAAAAAAAAAAAAAP4JAAAAAAAA/wkAAAAAAAAAAAAA/wkAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAEKAAAAAAAAAAAAAAEKAAAAAAAAAgoAAAAAAAAAAAAAAgoAAAAAAAADCgAAAAAAAAAAAAADCgAAAAAAAAQKAAAAAAAAAAAAAAQKAAAAAAAABQoAAAAAAAAAAAAABQoAAAAAAAAGCgAAAAAAAAAAAAAGCgAAAAAAAAcKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+wkAAAAAAAD7CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					129,
+					1,
+					"insert",
+					{
+						"characters": " that"
+					},
+					"BQAAAAcKAAAAAAAACAoAAAAAAAAAAAAACAoAAAAAAAAJCgAAAAAAAAAAAAAJCgAAAAAAAAoKAAAAAAAAAAAAAAoKAAAAAAAACwoAAAAAAAAAAAAACwoAAAAAAAAMCgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABwoAAAAAAAAHCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					130,
+					1,
+					"insert",
+					{
+						"characters": " I"
+					},
+					"AgAAAAwKAAAAAAAADQoAAAAAAAAAAAAADQoAAAAAAAAOCgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADAoAAAAAAAAMCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					131,
+					1,
+					"insert",
+					{
+						"characters": " could"
+					},
+					"BgAAAA4KAAAAAAAADwoAAAAAAAAAAAAADwoAAAAAAAAQCgAAAAAAAAAAAAAQCgAAAAAAABEKAAAAAAAAAAAAABEKAAAAAAAAEgoAAAAAAAAAAAAAEgoAAAAAAAATCgAAAAAAAAAAAAATCgAAAAAAABQKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADgoAAAAAAAAOCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					132,
+					1,
+					"insert",
+					{
+						"characters": " use"
+					},
+					"BAAAABQKAAAAAAAAFQoAAAAAAAAAAAAAFQoAAAAAAAAWCgAAAAAAAAAAAAAWCgAAAAAAABcKAAAAAAAAAAAAABcKAAAAAAAAGAoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFAoAAAAAAAAUCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					133,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AQAAABgKAAAAAAAAGQoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGAoAAAAAAAAYCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					136,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAALUJAAAAAAAAtgkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtQkAAAAAAAC1CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					137,
+					1,
+					"left_delete",
+					null,
+					"AQAAALUJAAAAAAAAtQkAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAtgkAAAAAAAC2CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					140,
+					1,
+					"insert",
+					{
+						"characters": "\n\nSnippet"
+					},
+					"CQAAABkKAAAAAAAAGgoAAAAAAAAAAAAAGgoAAAAAAAAbCgAAAAAAAAAAAAAbCgAAAAAAABwKAAAAAAAAAAAAABwKAAAAAAAAHQoAAAAAAAAAAAAAHQoAAAAAAAAeCgAAAAAAAAAAAAAeCgAAAAAAAB8KAAAAAAAAAAAAAB8KAAAAAAAAIAoAAAAAAAAAAAAAIAoAAAAAAAAhCgAAAAAAAAAAAAAhCgAAAAAAACIKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQoAAAAAAAAZCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					141,
+					1,
+					"insert",
+					{
+						"characters": " of"
+					},
+					"AwAAACIKAAAAAAAAIwoAAAAAAAAAAAAAIwoAAAAAAAAkCgAAAAAAAAAAAAAkCgAAAAAAACUKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIgoAAAAAAAAiCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					142,
+					1,
+					"insert",
+					{
+						"characters": " the"
+					},
+					"BAAAACUKAAAAAAAAJgoAAAAAAAAAAAAAJgoAAAAAAAAnCgAAAAAAAAAAAAAnCgAAAAAAACgKAAAAAAAAAAAAACgKAAAAAAAAKQoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJQoAAAAAAAAlCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					143,
+					1,
+					"insert",
+					{
+						"characters": " DialogueN"
+					},
+					"CgAAACkKAAAAAAAAKgoAAAAAAAAAAAAAKgoAAAAAAAArCgAAAAAAAAAAAAArCgAAAAAAACwKAAAAAAAAAAAAACwKAAAAAAAALQoAAAAAAAAAAAAALQoAAAAAAAAuCgAAAAAAAAAAAAAuCgAAAAAAAC8KAAAAAAAAAAAAAC8KAAAAAAAAMAoAAAAAAAAAAAAAMAoAAAAAAAAxCgAAAAAAAAAAAAAxCgAAAAAAADIKAAAAAAAAAAAAADIKAAAAAAAAMwoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKQoAAAAAAAApCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					144,
+					1,
+					"left_delete",
+					null,
+					"AQAAADIKAAAAAAAAMgoAAAAAAAABAAAATg",
+					"AQAAAAAAAAABAAAAMwoAAAAAAAAzCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					145,
+					1,
+					"insert",
+					{
+						"characters": "NodeX:"
+					},
+					"BgAAADIKAAAAAAAAMwoAAAAAAAAAAAAAMwoAAAAAAAA0CgAAAAAAAAAAAAA0CgAAAAAAADUKAAAAAAAAAAAAADUKAAAAAAAANgoAAAAAAAAAAAAANgoAAAAAAAA3CgAAAAAAAAAAAAA3CgAAAAAAADgKAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMgoAAAAAAAAyCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					146,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAADgKAAAAAAAAOQoAAAAAAAAAAAAAOQoAAAAAAAA6CgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOAoAAAAAAAA4CgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					147,
+					1,
+					"paste",
+					null,
+					"AQAAADoKAAAAAAAANAsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOgoAAAAAAAA6CgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					148,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AwAAADQLAAAAAAAAPQsAAAAAAAAAAAAAPQsAAAAAAABGCwAAAAAAAAAAAAA1CwAAAAAAADULAAAAAAAACAAAACAgICAgICAg",
+					"AQAAAAAAAAABAAAANAsAAAAAAAA0CwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					150,
+					1,
+					"left_delete",
+					null,
+					"AQAAADYLAAAAAAAANgsAAAAAAAAIAAAAICAgICAgICA",
+					"AQAAAAAAAAABAAAAPgsAAAAAAAA2CwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					151,
+					1,
+					"insert",
+					{
+						"characters": "Snippet"
+					},
+					"BwAAADYLAAAAAAAANwsAAAAAAAAAAAAANwsAAAAAAAA4CwAAAAAAAAAAAAA4CwAAAAAAADkLAAAAAAAAAAAAADkLAAAAAAAAOgsAAAAAAAAAAAAAOgsAAAAAAAA7CwAAAAAAAAAAAAA7CwAAAAAAADwLAAAAAAAAAAAAADwLAAAAAAAAPQsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAANgsAAAAAAAA2CwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					152,
+					1,
+					"insert",
+					{
+						"characters": " of"
+					},
+					"AwAAAD0LAAAAAAAAPgsAAAAAAAAAAAAAPgsAAAAAAAA/CwAAAAAAAAAAAAA/CwAAAAAAAEALAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPQsAAAAAAAA9CwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					153,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAEALAAAAAAAAQQsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQAsAAAAAAABACwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					156,
+					1,
+					"insert",
+					{
+						"characters": "Connection"
+					},
+					"CgAAAEELAAAAAAAAQgsAAAAAAAAAAAAAQgsAAAAAAABDCwAAAAAAAAAAAABDCwAAAAAAAEQLAAAAAAAAAAAAAEQLAAAAAAAARQsAAAAAAAAAAAAARQsAAAAAAABGCwAAAAAAAAAAAABGCwAAAAAAAEcLAAAAAAAAAAAAAEcLAAAAAAAASAsAAAAAAAAAAAAASAsAAAAAAABJCwAAAAAAAAAAAABJCwAAAAAAAEoLAAAAAAAAAAAAAEoLAAAAAAAASwsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQQsAAAAAAABBCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					157,
+					1,
+					"insert",
+					{
+						"characters": " Node"
+					},
+					"BQAAAEsLAAAAAAAATAsAAAAAAAAAAAAATAsAAAAAAABNCwAAAAAAAAAAAABNCwAAAAAAAE4LAAAAAAAAAAAAAE4LAAAAAAAATwsAAAAAAAAAAAAATwsAAAAAAABQCwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASwsAAAAAAABLCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					159,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEsLAAAAAAAASwsAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAATAsAAAAAAABMCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					162,
+					1,
+					"insert",
+					{
+						"characters": "X:"
+					},
+					"AgAAAE8LAAAAAAAAUAsAAAAAAAAAAAAAUAsAAAAAAABRCwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATwsAAAAAAABPCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					163,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAFELAAAAAAAAUgsAAAAAAAAAAAAAUgsAAAAAAABTCwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUQsAAAAAAABRCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					164,
+					1,
+					"paste",
+					null,
+					"AQAAAFMLAAAAAAAADw0AAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUwsAAAAAAABTCwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "Assets/Scripts/Nodes/TextAdventureNode.cs",
+			"settings":
+			{
+				"buffer_size": 2217,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"unindent",
+					null,
+					"OwAAAIYAAAAAAAAAhgAAAAAAAAAEAAAAICAgIOgAAAAAAAAA6AAAAAAAAAAEAAAAICAgIDABAAAAAAAAMAEAAAAAAAAEAAAAICAgID8BAAAAAAAAPwEAAAAAAAAEAAAAICAgIGcBAAAAAAAAZwEAAAAAAAAEAAAAICAgIGkBAAAAAAAAaQEAAAAAAAAEAAAAICAgIJMBAAAAAAAAkwEAAAAAAAAEAAAAICAgILkBAAAAAAAAuQEAAAAAAAAEAAAAICAgIOEBAAAAAAAA4QEAAAAAAAAEAAAAICAgIAMCAAAAAAAAAwIAAAAAAAAEAAAAICAgICcCAAAAAAAAJwIAAAAAAAAEAAAAICAgIE0CAAAAAAAATQIAAAAAAAAEAAAAICAgIHoCAAAAAAAAegIAAAAAAAAEAAAAICAgIKUCAAAAAAAApQIAAAAAAAAEAAAAICAgINICAAAAAAAA0gIAAAAAAAAEAAAAICAgIAYDAAAAAAAABgMAAAAAAAAEAAAAICAgIAwDAAAAAAAADAMAAAAAAAAEAAAAICAgIC8DAAAAAAAALwMAAAAAAAAEAAAAICAgIEQDAAAAAAAARAMAAAAAAAAEAAAAICAgIGMDAAAAAAAAYwMAAAAAAAAEAAAAICAgIIADAAAAAAAAgAMAAAAAAAAEAAAAICAgIJ4DAAAAAAAAngMAAAAAAAAEAAAAICAgILoDAAAAAAAAugMAAAAAAAAEAAAAICAgIN4DAAAAAAAA3gMAAAAAAAAEAAAAICAgIOgDAAAAAAAA6AMAAAAAAAAEAAAAICAgIAwEAAAAAAAADAQAAAAAAAAEAAAAICAgIEEEAAAAAAAAQQQAAAAAAAAEAAAAICAgIFUEAAAAAAAAVQQAAAAAAAAEAAAAICAgIHoEAAAAAAAAegQAAAAAAAAEAAAAICAgILEEAAAAAAAAsQQAAAAAAAAEAAAAICAgIMUEAAAAAAAAxQQAAAAAAAAEAAAAICAgIOsEAAAAAAAA6wQAAAAAAAAEAAAAICAgICQFAAAAAAAAJAUAAAAAAAAEAAAAICAgIDgFAAAAAAAAOAUAAAAAAAAEAAAAICAgIFoFAAAAAAAAWgUAAAAAAAAEAAAAICAgIIsFAAAAAAAAiwUAAAAAAAAEAAAAICAgIJ8FAAAAAAAAnwUAAAAAAAAEAAAAICAgIMQFAAAAAAAAxAUAAAAAAAAEAAAAICAgINkFAAAAAAAA2QUAAAAAAAAEAAAAICAgIEwGAAAAAAAATAYAAAAAAAAEAAAAICAgIF8GAAAAAAAAXwYAAAAAAAAEAAAAICAgIGkGAAAAAAAAaQYAAAAAAAAEAAAAICAgIHAGAAAAAAAAcAYAAAAAAAAEAAAAICAgIKUGAAAAAAAApQYAAAAAAAAEAAAAICAgIKsGAAAAAAAAqwYAAAAAAAAEAAAAICAgIMYGAAAAAAAAxgYAAAAAAAAEAAAAICAgIM0GAAAAAAAAzQYAAAAAAAAEAAAAICAgIPgGAAAAAAAA+AYAAAAAAAAEAAAAICAgICEHAAAAAAAAIQcAAAAAAAAEAAAAICAgICcHAAAAAAAAJwcAAAAAAAAEAAAAICAgIEsHAAAAAAAASwcAAAAAAAAEAAAAICAgIFUHAAAAAAAAVQcAAAAAAAAEAAAAICAgIJ0HAAAAAAAAnQcAAAAAAAAEAAAAICAgIOYHAAAAAAAA5gcAAAAAAAAEAAAAICAgIDAIAAAAAAAAMAgAAAAAAAAEAAAAICAgIFUIAAAAAAAAVQgAAAAAAAAEAAAAICAgIJYIAAAAAAAAlggAAAAAAAAEAAAAICAgIKAIAAAAAAAAoAgAAAAAAAAEAAAAICAgIKYIAAAAAAAApggAAAAAAAAEAAAAICAgIA",
+					"AQAAAAAAAAABAAAAigAAAAAAAACTCQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "Assets/Scripts/TextAdventureGame.cs",
+			"settings":
+			{
+				"buffer_size": 11683,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "Assets/Scripts/TextAdventureGameData.cs",
+			"settings":
+			{
+				"buffer_size": 2777,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "Assets/Scripts/Nodes/X-Nodes/TextAdventureXNodeGraph.cs",
+			"settings":
+			{
+				"buffer_size": 4015,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "Assets/Scripts/Nodes/X-Nodes/TextAdventureSelectorNodeX.cs",
+			"settings":
+			{
+				"buffer_size": 317,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "Assets/Scripts/Nodes/X-Nodes/DialogueNodeX.cs",
+			"settings":
+			{
+				"buffer_size": 2155,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					15,
+					1,
+					"unindent",
+					null,
+					"PAAAAJMAAAAAAAAAkwAAAAAAAAAEAAAAICAgIKIAAAAAAAAAogAAAAAAAAAEAAAAICAgINIAAAAAAAAA0gAAAAAAAAAEAAAAICAgINQAAAAAAAAA1AAAAAAAAAAEAAAAICAgIAkBAAAAAAAACQEAAAAAAAAEAAAAICAgIDwBAAAAAAAAPAEAAAAAAAAEAAAAICAgIE8BAAAAAAAATwEAAAAAAAAEAAAAICAgIHcBAAAAAAAAdwEAAAAAAAAEAAAAICAgIJ0BAAAAAAAAnQEAAAAAAAAEAAAAICAgIOcBAAAAAAAA5wEAAAAAAAAEAAAAICAgICkCAAAAAAAAKQIAAAAAAAAEAAAAICAgIGUCAAAAAAAAZQIAAAAAAAAEAAAAICAgIGsCAAAAAAAAawIAAAAAAAAEAAAAICAgIKcCAAAAAAAApwIAAAAAAAAEAAAAICAgIMUCAAAAAAAAxQIAAAAAAAAEAAAAICAgIO8CAAAAAAAA7wIAAAAAAAAEAAAAICAgIAwDAAAAAAAADAMAAAAAAAAEAAAAICAgIBMDAAAAAAAAEwMAAAAAAAAEAAAAICAgIEwDAAAAAAAATAMAAAAAAAAEAAAAICAgIFIDAAAAAAAAUgMAAAAAAAAEAAAAICAgIH0DAAAAAAAAfQMAAAAAAAAEAAAAICAgIIcDAAAAAAAAhwMAAAAAAAAEAAAAICAgINgDAAAAAAAA2AMAAAAAAAAEAAAAICAgIP0DAAAAAAAA/QMAAAAAAAAEAAAAICAgIAsEAAAAAAAACwQAAAAAAAAEAAAAICAgIE8EAAAAAAAATwQAAAAAAAAEAAAAICAgIGEEAAAAAAAAYQQAAAAAAAAEAAAAICAgIJ0EAAAAAAAAnQQAAAAAAAAEAAAAICAgIK8EAAAAAAAArwQAAAAAAAAEAAAAICAgINMEAAAAAAAA0wQAAAAAAAAEAAAAICAgIOEEAAAAAAAA4QQAAAAAAAAEAAAAICAgIOwEAAAAAAAA7AQAAAAAAAAEAAAAICAgIAEFAAAAAAAAAQUAAAAAAAAEAAAAICAgIAgFAAAAAAAACAUAAAAAAAAEAAAAICAgIDsFAAAAAAAAOwUAAAAAAAAEAAAAICAgIEEFAAAAAAAAQQUAAAAAAAAEAAAAICAgIHUFAAAAAAAAdQUAAAAAAAAEAAAAICAgIJUFAAAAAAAAlQUAAAAAAAAEAAAAICAgIJ8FAAAAAAAAnwUAAAAAAAAEAAAAICAgIOAFAAAAAAAA4AUAAAAAAAAEAAAAICAgIBwGAAAAAAAAHAYAAAAAAAAEAAAAICAgIGAGAAAAAAAAYAYAAAAAAAAEAAAAICAgIGoGAAAAAAAAagYAAAAAAAAEAAAAICAgIHEGAAAAAAAAcQYAAAAAAAAEAAAAICAgIJcGAAAAAAAAlwYAAAAAAAAEAAAAICAgIJ0GAAAAAAAAnQYAAAAAAAAEAAAAICAgIMcGAAAAAAAAxwYAAAAAAAAEAAAAICAgINEGAAAAAAAA0QYAAAAAAAAEAAAAICAgIAEHAAAAAAAAAQcAAAAAAAAEAAAAICAgIAwHAAAAAAAADAcAAAAAAAAEAAAAICAgIE0HAAAAAAAATQcAAAAAAAAEAAAAICAgIFcHAAAAAAAAVwcAAAAAAAAEAAAAICAgIIMHAAAAAAAAgwcAAAAAAAAEAAAAICAgII4HAAAAAAAAjgcAAAAAAAAEAAAAICAgIMoHAAAAAAAAygcAAAAAAAAEAAAAICAgINQHAAAAAAAA1AcAAAAAAAAEAAAAICAgIAAIAAAAAAAAAAgAAAAAAAAEAAAAICAgIAsIAAAAAAAACwgAAAAAAAAEAAAAICAgIGIIAAAAAAAAYggAAAAAAAAEAAAAICAgIGgIAAAAAAAAaAgAAAAAAAAEAAAAICAgIA",
+					"AQAAAAAAAAABAAAAlwAAAAAAAABZCQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "Assets/Scripts/Nodes/X-Nodes/TextAdventureNodeX.cs",
+			"settings":
+			{
+				"buffer_size": 5653,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "Assets/Scripts/Nodes/ConnectionNode.cs",
+			"settings":
+			{
+				"buffer_size": 532,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					8,
+					1,
+					"unindent",
+					null,
+					"DQAAAIYAAAAAAAAAhgAAAAAAAAAEAAAAICAgIJUAAAAAAAAAlQAAAAAAAAAEAAAAICAgIMUAAAAAAAAAxQAAAAAAAAAEAAAAICAgIMcAAAAAAAAAxwAAAAAAAAAEAAAAICAgIOsAAAAAAAAA6wAAAAAAAAAEAAAAICAgIBABAAAAAAAAEAEAAAAAAAAEAAAAICAgIE8BAAAAAAAATwEAAAAAAAAEAAAAICAgIFUBAAAAAAAAVQEAAAAAAAAEAAAAICAgIHABAAAAAAAAcAEAAAAAAAAEAAAAICAgIJkBAAAAAAAAmQEAAAAAAAAEAAAAICAgIKABAAAAAAAAoAEAAAAAAAAEAAAAICAgIMYBAAAAAAAAxgEAAAAAAAAEAAAAICAgIBECAAAAAAAAEQIAAAAAAAAEAAAAICAgIA",
+					"AQAAAAAAAAABAAAAigAAAAAAAABGAgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "Assets/Voidless/Editor/Classes/Voidless Node Editor/Nodes/Node.cs",
+			"settings":
+			{
+				"buffer_size": 4176,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "Assets/Voidless/Scripts/Data Structures/Linked List/Node.cs",
+			"settings":
+			{
+				"buffer_size": 1389,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Library/PackageCache/com.github.siccity.xnode@82f7887931/Scripts/Node.cs",
+			"settings":
+			{
+				"buffer_size": 22619,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Scripts/Voidless Utilities/VMath.cs",
+		"/D/My Documents/NES Maker/NESMetroidvania/.gitignore",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Scripts/Voidless Utilities/VString.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Windows/MAKE_A_WINDOWPrefabUtilities/PrefabUtilitysWindow.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Windows/VEditorDataWindow.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Windows/FolderCreationWindow.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Windows/CollectionsIndexerWindow.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Windows/FOV Frustum Mesh Creation/FOVFrustumMeshCreationWindow.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Classes/Voidless Node Editor/Node Editor Windows/LevelFlowNodeEditorWindow.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Classes/Voidless Node Editor/Node Editor Windows/BaseNodeEditorWindow.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Composite/TextAdventureSelectorNode.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Classes/Voidless Node Editor/Nodes/Node.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/X-Nodes/TextAdventureNodeX.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Windows/InputMappingWindow.cs",
+		"/D/My Documents/Unity/Unity Projects/[LGG]TMNT-TheLastRonin/CombatPrototyping/Assets/LGG/Scripts/Extension Classes/LGGCamera.cs",
+		"/C/Users/Lif/Desktop/VISAData",
+		"/C/Users/Lif/Desktop/GameLabels",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Scripts/Voidless Utilities/VPhysics.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Scripts/Voidless Utilities/VVector3.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Setters/SetterGroup.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/TextAdventureGame.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/TextAdventureGameData.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/SublimeProject_TextAdventureGameMaker.sublime-project",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Setters/IntegerSetter.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Composite/TextAdventureCompositeNode.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Composite/TextAdventureSequencerNode.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/SetterNode.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/ConnectionNode.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/TextAdventureNode.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/X-Nodes/TextAdventureCompositeNodeX.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Scripts/Voidless Utilities/VDictionary.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/DialogueNode.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/ConditionNode.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Setters/StringSetter.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Setters/FloatSetter.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Setters/BoolSetter.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Comparers/ComparerGroup.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Comparers/IntegerComparer.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Comparers/StringComparer.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/X-Nodes/DialogueNodeX.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/X-Nodes/ConnectionNodeX.cs",
+		"/D/My Documents/Unity/Unity Projects/TikTokContentCreator/Assets/Scripts/QuizCreator.cs",
+		"/D/My Documents/Unity/Unity Projects/TikTokContentCreator/Assets/Scripts/Programming Tips/ProgrammingTipUI.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/TextParserData.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/TextAdventureGameUI.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/X-Nodes/TextAdventureXNodeGraph.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/NodeConnection.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Comparers/BoolComparer.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/Comparers/FloatComparer.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Editor/Classes/Voidless Node Editor/Connections/Connection.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/Nodes/TextAdventureNodeGraph.cs",
+		"/C/Users/Lif/Desktop/ProgrammingQuizGenerationRequirements_0.txt",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Scripts/Object Pooling/Pool Objects/PoolTextMeshProUGUI.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Scripts/CommandLineInterface.cs",
+		"/D/My Documents/Unity/Unity Projects/TextAdventureGameMaker/Assets/Voidless/Scripts/Voidless Utilities/VCollections.cs",
+		"/D/My Documents/Unity/Unity Projects/Text-Adventure Maker/Assets/Voidless/Scripts/Object Pooling/Object Pools/BaseObjectPool.cs",
+		"/D/My Documents/Unity/Unity Projects/Text-Adventure Maker/Assets/Voidless/Scripts/Object Pooling/Object Pools/GameObjectPool.cs",
+		"/D/My Documents/Unity/Unity Projects/Text-Adventure Maker/Assets/Voidless/Scripts/Voidless Utilities/VColor.cs",
+		"/D/My Documents/Unity/Unity Projects/Text-Adventure Maker/Assets/Voidless/Scripts/Dictionary Serializer/SerializableDictionary.cs",
+		"/D/My Documents/Unity/Unity Projects/Text-Adventure Maker/Assets/Voidless/Scripts/Dictionary Serializer/SerializableHashSet.cs",
+		"/D/My Documents/Unity/Unity Projects/Text-Adventure Maker/SublimeProject_Text-AdventureMaker.sublime-project",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Controllers/GameplayUIController.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Dialogue System/Dialogue.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Turntable/TurntableSceneController.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Dialogue System/DialogueNode.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Editor/Inspectors/AnimatorTesterInspector.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Editor/Inspectors/ConstrainedJointInspector.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Editor/Classes/VRecorder.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VJSONSerializer.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Editor/Inspectors/FiniteStateAudioClipInspector.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Editor/Classes/VGUIUtility.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VInputSystem.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/HumanoidCharacterInputController.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Dictionary Serializer/SerializableDictionary.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Dialogue System/DialogueText.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Dialogue System/DialogueChoiceNode.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Input Controller/New Input System/GamePadInputController.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Controllers/GameplayController.cs",
+		"/D/My Documents/Unity/Unity Projects/TikTokContentCreator/.gitignore",
+		"/D/My Documents/Unity/Unity Projects/TikTokContentCreator/TikTokContentCreator/Assets/Scripts/QuizData.cs",
+		"/C/Users/Lif/.openai/auth.json",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Controllers/GameController.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Input Controller/New Input System/BaseInputController.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Editor/TestingRoomSceneControllerEditor.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Singleton/Singleton.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/CharacterInputController.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Static Classes/REMakerExtensions.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/TextInteractableTriggerZone.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/GameplayUIController.cs",
+		"/D/My Documents/Eclipse/Eclipse-Workspace/Processing-AIArchitecture/bin/VoidlessUtilities/Processing/Core/PSketch.class",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Dialogue System/IDialogueNode.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/InteractableTriggerZone.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VString.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VText.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Editor/Windows/TextConsoleWindow.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/SceneControllers/TestingRoomSceneController.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Scriptable Modules/Follow Modules/Rotation Follow Modules/VCameraRotationFollowModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VQuaternion.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Scriptable Modules/Follow Modules/VCameraDisplacementFollowModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VVector3.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VMaterial.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VMath.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCameraFollowAxisData.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/TO DEPRECATE (After Turning Delimiters into Modules)/Occlusion Handlers/VCameraOcclusionEvaluatorModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Components/VCameraViewportHandler.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/TO DEPRECATE (After Turning Delimiters into Modules)/VCameraOcclusionHandler.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/TESTs/TEST_Dialogues.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Scripts/Dialogue System/ScriptableDialogueNode.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/LGG/Object Pooling/Pool Object Requesters/PoolGameObjectRequester.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Scriptable Modules/Follow Modules/VCameraFollowModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Components/VCameraSensorSystem.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VGizmos.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VColor.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/TO DEPRECATE (After Turning Delimiters into Modules)/Camera Functions/VCameraRotationFollow.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Voidless Utilities/VPhysics.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Scriptable Modules/VCameraModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/TO DEPRECATE (After Turning Delimiters into Modules)/VCameraDistanceAdjuster.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Scriptable Modules/Distance Adjusters/VCameraDistanceCalculatorModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Scriptable Modules/Target Retrievers/VCameraMultipleTargetRetrieverModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Scriptable Modules/Target Retrievers/VCameraTargetRetrieverModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/TO DEPRECATE (After Turning Delimiters into Modules)/Target Retreivers/VCameraTargetRetriever.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/TO DEPRECATE (After Turning Delimiters into Modules)/Distance Calculators/VCameraDistanceCalculator.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Scriptable Modules/Distance Adjusters/VCameraDistanceAdjusterModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/TO DEPRECATE (After Turning Delimiters into Modules)/Distance Calculators/FitTargetBoundsDistanceCalculator.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Scriptable Modules/Follow Modules/Displacement Follow Modules/VCameraOrbitedDisplacementFollowModule.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/VCamera's Targets/VCameraTarget.cs",
+		"/D/My Documents/Unity/Unity Projects/ClassicResidentEvilMaker/Assets/Voidless/Scripts/Cameras/VCamera/TO DEPRECATE (After Turning Delimiters into Modules)/Camera Functions/VCameraFollow.cs"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"TextAdventureNode",
+			"Level Flow",
+			"WINDOW_ROOT_PATH",
+			"Level Flow E",
+			"///",
+			"PATH_ROOT_VOIDLESS_TOOLS",
+			"/// <sum",
+			"PATH_ROOT_VOIDLESS",
+			"PATH_SCRIPTABLE_OBJECTS",
+			"PATH_ROOT_VOIDLESS",
+			"// <summary",
+			"PREFABUTILITYSWINDOW_PATH",
+			"/// <summary>",
+			"/// <summa",
+			"/// <s",
+			"/// <summary>",
+			"FOLDERCREATIONWINDOW_PATH",
+			"COLLECTIONSINDEXERWINDOW_PATH",
+			"PATH_ROOT_VOIDLESS",
+			"Voidless Tools",
+			"project",
+			"Projec",
+			"Selector",
+			"Sequencer",
+			"[",
+			"int",
+			"return",
+			"public",
+			"set {",
+			"string",
+			">Gets ",
+			" { get",
+			"[SerializeField] ",
+			"Node",
+			"Comparer",
+			"NodeConnection",
+			"Property_Name",
+			"CallbackContext",
+			"public",
+			"inputField.text",
+			"text",
+			"Collection",
+			"verb",
+			"ping",
+			"wordsMapping",
+			"uniqueList",
+			"_list",
+			"val",
+			"cur",
+			"_list",
+			"#",
+			"verbs"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Voidless"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								3343
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Okay, let me try to answer:",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1035.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/Nodes/TextAdventureNode.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Scripts/TextAdventureGame.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								487,
+								508
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Scripts/TextAdventureGameData.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								320,
+								343
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Scripts/Nodes/X-Nodes/TextAdventureXNodeGraph.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1854,
+								1854
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Scripts/Nodes/X-Nodes/TextAdventureSelectorNodeX.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Scripts/Nodes/X-Nodes/DialogueNodeX.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								147,
+								2153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/Scripts/Nodes/X-Nodes/TextAdventureNodeX.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1589,
+								1589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Assets/Scripts/Nodes/ConnectionNode.cs",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								270,
+								270
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Assets/Voidless/Editor/Classes/Voidless Node Editor/Nodes/Node.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Assets/Voidless/Scripts/Data Structures/Linked List/Node.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Library/PackageCache/com.github.siccity.xnode@82f7887931/Scripts/Node.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.38829787234,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "SublimeProject_TextAdventureGameMaker.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"connect",
+				"Scripts\\Nodes\\ConnectionNode.cs"
+			],
+			[
+				"dialo",
+				"Scripts\\Nodes\\X-Nodes\\DialogueNodeX.cs"
+			],
+			[
+				"node",
+				"Scripts\\Data Structures\\Linked List\\Node.cs"
+			],
+			[
+				"Node",
+				"Editor\\Classes\\Voidless Node Editor\\Nodes\\Node.cs"
+			],
+			[
+				"nodex",
+				"Scripts\\Nodes\\X-Nodes\\TextAdventureNodeX.cs"
+			],
+			[
+				"TextAdventureXNodeGraph",
+				"Scripts\\Nodes\\X-Nodes\\TextAdventureXNodeGraph.cs"
+			],
+			[
+				"gamedata",
+				"Scripts\\TextAdventureGameData.cs"
+			],
+			[
+				"textadven",
+				"Scripts\\TextAdventureGame.cs"
+			],
+			[
+				"textadvent",
+				"Scripts\\Nodes\\TextAdventureNode.cs"
+			],
+			[
+				"vma",
+				"Scripts\\Voidless Utilities\\VMath.cs"
+			],
+			[
+				"vphy",
+				"Scripts\\Voidless Utilities\\VPhysics.cs"
+			],
+			[
+				"vmath",
+				"Scripts\\Voidless Utilities\\VMath.cs"
+			],
+			[
+				"vvect",
+				"Scripts\\Voidless Utilities\\VVector3.cs"
+			],
+			[
+				"selector",
+				"Scripts\\Nodes\\Composite\\TextAdventureSelectorNode.cs"
+			],
+			[
+				"intset",
+				"Scripts\\Nodes\\Setters\\IntegerSetter.cs"
+			],
+			[
+				"setter",
+				"Scripts\\Nodes\\Setters\\SetterGroup.cs"
+			],
+			[
+				"vdic",
+				"Scripts\\Voidless Utilities\\VDictionary.cs"
+			],
+			[
+				"data",
+				"Scripts\\TextAdventureGameData.cs"
+			],
+			[
+				"textadventureno",
+				"Scripts\\Nodes\\TextAdventureNode.cs"
+			],
+			[
+				"condition",
+				"Scripts\\Nodes\\ConditionNode.cs"
+			],
+			[
+				"group",
+				"Scripts\\Nodes\\Comparers\\ComparerGroup.cs"
+			],
+			[
+				"integer",
+				"Scripts\\Nodes\\Comparers\\IntegerComparer.cs"
+			],
+			[
+				"stringcom",
+				"Scripts\\Nodes\\Comparers\\StringComparer.cs"
+			],
+			[
+				"connec",
+				"Scripts\\Nodes\\X-Nodes\\ConnectionNodeX.cs"
+			],
+			[
+				"dialogueno",
+				"Scripts\\Nodes\\X-Nodes\\DialogueNodeX.cs"
+			],
+			[
+				"connection",
+				"Scripts\\Nodes\\NodeConnection.cs"
+			],
+			[
+				"condi",
+				"Scripts\\Nodes\\ConditionNode.cs"
+			],
+			[
+				"textadventurenode",
+				"Scripts\\Nodes\\TextAdventureNode.cs"
+			],
+			[
+				"dialogue",
+				"Scripts\\Nodes\\DialogueNode.cs"
+			],
+			[
+				"textadventure",
+				"Scripts\\Nodes\\TextAdventureNode.cs"
+			],
+			[
+				"float",
+				"Scripts\\Nodes\\Comparers\\FloatComparer.cs"
+			],
+			[
+				"string",
+				"Scripts\\Nodes\\Comparers\\StringComparer.cs"
+			],
+			[
+				"inte",
+				"Scripts\\Nodes\\Comparers\\IntegerComparer.cs"
+			],
+			[
+				"GameData",
+				"Scripts\\TextAdventureGameData.cs"
+			],
+			[
+				"textadventureconn",
+				"Scripts\\Nodes\\TextAdventureNodeConnection.cs"
+			],
+			[
+				"textadventuregra",
+				"Scripts\\Nodes\\X-Nodes\\TextAdventureNodeGraph.cs"
+			],
+			[
+				"textadventuren",
+				"Scripts\\Nodes\\TextAdventureNode.cs"
+			],
+			[
+				"textad",
+				"Scripts\\Nodes\\TextAdventureNode.cs"
+			],
+			[
+				"texta",
+				"Scripts\\Nodes\\TextAdventureGraphNode.cs"
+			],
+			[
+				"comman",
+				"Scripts\\CommandLineInterface.cs"
+			],
+			[
+				"tex",
+				"Scripts\\TextAdventureGameUI.cs"
+			],
+			[
+				"vcolor",
+				"Scripts\\Voidless Utilities\\VColor.cs"
+			],
+			[
+				"baseobject",
+				"Scripts\\Object Pooling\\Object Pools\\BaseObjectPool.cs"
+			],
+			[
+				"gameobject",
+				"Scripts\\Object Pooling\\Object Pools\\GameObjectPool.cs"
+			],
+			[
+				"poolte",
+				"Scripts\\Object Pooling\\Pool Objects\\PoolTextMeshProUGUI.cs"
+			],
+			[
+				"vstring",
+				"Scripts\\Voidless Utilities\\VString.cs"
+			],
+			[
+				"vcollec",
+				"Scripts\\Voidless Utilities\\VCollections.cs"
+			],
+			[
+				"text",
+				"Scripts\\TextAdventureGameData.cs"
+			],
+			[
+				"serializ",
+				"Scripts\\Dictionary Serializer\\SerializableDictionary.cs"
+			],
+			[
+				"ser",
+				"Scripts\\Dictionary Serializer\\SerializableHashSet.cs"
+			],
+			[
+				"seriali",
+				"Scripts\\Dictionary Serializer\\SerializableDictionary.cs"
+			],
+			[
+				"vinput",
+				"Scripts\\Voidless Utilities\\VInputSystem.cs"
+			],
+			[
+				"v",
+				"Scripts\\Voidless Utilities\\VJSONSerializer.cs"
+			],
+			[
+				"turn",
+				"Scripts\\Turntable\\TurntableSceneController.cs"
+			],
+			[
+				"baseiput",
+				"Scripts\\Input Controller\\New Input System\\BaseInputController.cs"
+			],
+			[
+				"gamepadin",
+				"Scripts\\Input Controller\\New Input System\\GamePadInputController.cs"
+			],
+			[
+				"humano",
+				"Scripts\\HumanoidCharacterInputController.cs"
+			],
+			[
+				"singlet",
+				"Scripts\\Singleton\\Singleton.cs"
+			],
+			[
+				"gamepa",
+				"Scripts\\Input Controller\\New Input System\\GamePadInputController.cs"
+			],
+			[
+				"game",
+				"Scripts\\Controllers\\GameController.cs"
+			],
+			[
+				"choice",
+				"Scripts\\Dialogue System\\DialogueChoiceNode.cs"
+			],
+			[
+				"gamepla",
+				"Scripts\\Controllers\\GameplayUIController.cs"
+			],
+			[
+				"songleton",
+				"Scripts\\Singleton\\Singleton.cs"
+			],
+			[
+				"gameplaycon",
+				"Scripts\\Controllers\\GameplayController.cs"
+			],
+			[
+				"singleton",
+				"Scripts\\Singleton\\Singleton.cs"
+			],
+			[
+				"dialoguechoice",
+				"Scripts\\Dialogue System\\DialogueChoiceNode.cs"
+			],
+			[
+				"dialogu",
+				"Scripts\\Dialogue System\\DialogueNode.cs"
+			],
+			[
+				"turnt",
+				"Scripts\\Turntable\\TurntableSceneController.cs"
+			],
+			[
+				"gamepl",
+				"Scripts\\GameplayUIController.cs"
+			],
+			[
+				"textin",
+				"Scripts\\TextInteractableTriggerZone.cs"
+			],
+			[
+				"rem",
+				"Scripts\\Static Classes\\REMakerExtensions.cs"
+			],
+			[
+				"dialoguete",
+				"Scripts\\Dialogue System\\DialogueText.cs"
+			],
+			[
+				"idialo",
+				"Scripts\\Dialogue System\\IDialogueNode.cs"
+			],
+			[
+				"dialoguenode",
+				"Scripts\\Dialogue System\\DialogueNode.cs"
+			],
+			[
+				"dialoguech",
+				"Scripts\\Dialogue System\\DialogueChoiceNode.cs"
+			],
+			[
+				"textcons",
+				"Editor\\Windows\\TextConsoleWindow.cs"
+			],
+			[
+				"vtext",
+				"Scripts\\Voidless Utilities\\VText.cs"
+			],
+			[
+				"character",
+				"Scripts\\CharacterInputController.cs"
+			],
+			[
+				"inpucontroll",
+				"Scripts\\CharacterInputController.cs"
+			],
+			[
+				"testin",
+				"Scripts\\SceneControllers\\TestingRoomSceneController.cs"
+			],
+			[
+				"remaker",
+				"Scripts\\Static Classes\\REMakerExtensions.cs"
+			],
+			[
+				"scripta",
+				"Scripts\\Dialogue System\\ScriptableDialogueNode.cs"
+			],
+			[
+				"dialoguetex",
+				"Scripts\\Dialogue System\\DialogueText.cs"
+			],
+			[
+				"dialoguet",
+				"Scripts\\Dialogue System\\DialogueText.cs"
+			],
+			[
+				"vgizmo",
+				"Scripts\\Voidless Utilities\\VGizmos.cs"
+			],
+			[
+				"vgizmos",
+				"Scripts\\Voidless Utilities\\VGizmos.cs"
+			],
+			[
+				"viewport",
+				"Scripts\\Cameras\\VCamera\\VCamera's Components\\VCameraViewportHandler.cs"
+			],
+			[
+				"occlusion",
+				"Scripts\\Cameras\\VCamera\\TO DEPRECATE (After Turning Delimiters into Modules)\\VCameraOcclusionHandler.cs"
+			],
+			[
+				"VCameraSensorSystem",
+				"Scripts\\Cameras\\VCamera\\VCamera's Components\\VCameraSensorSystem.cs"
+			],
+			[
+				"axis",
+				"Scripts\\Cameras\\VCameraFollowAxisData.cs"
+			],
+			[
+				"VMat",
+				"Scripts\\Voidless Utilities\\VMaterial.cs"
+			],
+			[
+				"vvec",
+				"Scripts\\Voidless Utilities\\VVector3.cs"
+			],
+			[
+				"vqua",
+				"Scripts\\Voidless Utilities\\VQuaternion.cs"
+			],
+			[
+				"vcamera",
+				"Scripts\\Cameras\\VCamera\\VCamera.cs"
+			],
+			[
+				"vcamerafollo",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Follow Modules\\VCameraFollowModule.cs"
+			],
+			[
+				"vcamerarotation",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Follow Modules\\Rotation Follow Modules\\VCameraRotationFollowModule.cs"
+			],
+			[
+				"vcamerarota",
+				"Scripts\\Cameras\\VCamera\\TO DEPRECATE (After Turning Delimiters into Modules)\\Camera Functions\\VCameraRotationFollow.cs"
+			],
+			[
+				"vphys",
+				"Scripts\\Voidless Utilities\\VPhysics.cs"
+			],
+			[
+				"displacement",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Follow Modules\\VCameraDisplacementFollowModule.cs"
+			],
+			[
+				"vcameradistance",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Distance Adjusters\\VCameraDistanceAdjusterModule.cs"
+			],
+			[
+				"vcameratar",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Target Retrievers\\VCameraTargetRetrieverModule.cs"
+			],
+			[
+				"vcameratarget",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Target Retrievers\\VCameraMultipleTargetRetrieverModule.cs"
+			],
+			[
+				"vcameatar",
+				"Scripts\\Cameras\\VCamera\\TO DEPRECATE (After Turning Delimiters into Modules)\\Target Retreivers\\VCameraTargetRetriever.cs"
+			],
+			[
+				"vcamer",
+				"Scripts\\Cameras\\VCamera\\VCamera.cs"
+			],
+			[
+				"vcamerarotationfollo",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Follow Modules\\Rotation Follow Modules\\VCameraRotationFollowModule.cs"
+			],
+			[
+				"vcameramo",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\VCameraModule.cs"
+			],
+			[
+				"distancea",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Distance Adjusters\\VCameraDistanceAdjusterModule.cs"
+			],
+			[
+				"sing",
+				"Scripts\\Singleton\\Singleton.cs"
+			],
+			[
+				"distanceadjuster",
+				"Scripts\\Cameras\\VCamera\\TO DEPRECATE (After Turning Delimiters into Modules)\\VCameraDistanceAdjuster.cs"
+			],
+			[
+				"vcameradista",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Distance Adjusters\\VCameraDistanceAdjusterModule.cs"
+			],
+			[
+				"distancead",
+				"Scripts\\Cameras\\VCamera\\TO DEPRECATE (After Turning Delimiters into Modules)\\VCameraDistanceAdjuster.cs"
+			],
+			[
+				"vcameratarg",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Target Retrievers\\VCameraTargetRetrieverModule.cs"
+			],
+			[
+				"vtar",
+				"Scripts\\Cameras\\VCamera\\VCamera's Targets\\VCameraTarget.cs"
+			],
+			[
+				"vtarget",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Target Retrievers\\VCameraTargetRetrieverModule.cs"
+			],
+			[
+				"vcamerafollowmo",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Follow Modules\\VCameraFollowModule.cs"
+			],
+			[
+				"rotationdollo",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Follow Modules\\Rotation Follow Modules\\VCameraRotationFollowModule.cs"
+			],
+			[
+				"vcameradispl",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Follow Modules\\VCameraDisplacementFollowModule.cs"
+			],
+			[
+				"viewporth",
+				"Scripts\\Cameras\\VCamera\\VCamera's Components\\VCameraViewportHandler.cs"
+			],
+			[
+				"follow",
+				"Scripts\\Cameras\\VCamera\\VCamera's Scriptable Modules\\Follow Modules\\VCameraFollowModule.cs"
+			],
+			[
+				"vcameradisplaceme",
+				"Scripts\\Cameras\\VCamera\\TO DEPRECATE (After Turning Delimiters into Modules)\\Camera Functions\\VCameraDisplacementFollow.cs"
+			],
+			[
+				"cameraax",
+				"Scripts\\Cameras\\VCameraFollowAxisData.cs"
+			],
+			[
+				"cameraview",
+				"Scripts\\Cameras\\VCamera\\VCamera's Viewport Structures\\CameraViewportPlane.cs"
+			],
+			[
+				"baseinpu",
+				"Scripts\\Input Controller\\New Input System\\BaseInputController.cs"
+			],
+			[
+				"vcam",
+				"Scripts\\Cameras\\VCamera.cs"
+			],
+			[
+				"vcameramodule",
+				"Scripts\\Cameras\\Camera's Components\\Occlusion Handlers\\VCameraOcclusionEvaluatorModule.cs"
+			],
+			[
+				"calculatormo",
+				"Scripts\\Cameras\\Camera's Scriptable Components\\Distance Adjusters\\VCameraDistanceCalculatorModule.cs"
+			],
+			[
+				"vcameradistan",
+				"Scripts\\Cameras\\Camera's Components\\Distance Calculators\\VCameraDistanceCalculator.cs"
+			],
+			[
+				"VCam",
+				"Scripts\\Cameras\\VCamera.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "wings",
+		"selected_items":
+		[
+			[
+				"wings",
+				"D:\\My Documents\\Unity\\Unity Projects\\[LGG]WingsOfIcaria\\SublimeProject_WingsOfIcaria.sublime-project"
+			],
+			[
+				"",
+				"D:\\My Documents\\Unity\\Unity Projects\\[LGG]TMNT-TheLastRonin\\CombatPrototyping\\SublimeProject_TMNT-TheLastRonin.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
