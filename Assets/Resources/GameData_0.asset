@@ -19,3 +19,15 @@ MonoBehaviour:
     _adjectives: []
     _articles: []
   _typingDuration: 0.15
+  _stringDictionary:
+    _keysList: []
+    _valuesList: []
+  _floatDictionary:
+    _keysList: []
+    _valuesList: []
+  _boolDictionary:
+    _keysList: []
+    _valuesList: 
+  _intDictionary:
+    _keysList: []
+    _valuesList: 

@@ -8,97 +8,38 @@ namespace Voidless.TextAdventureMaker
 [CreateAssetMenu]
 public class TextAdventureXNodeGraph : NodeGraph
 {
-    public DialogueNodeX GetRootNode()
+    private TextAdventureNodeX _current;
+
+    /// <summary>Gets and Sets current property.</summary>
+    public TextAdventureNodeX current
+    {
+        get { return _current; }
+        set { _current = value; }
+    }
+
+    public TextAdventureNodeX GetRootNode()
     {
         foreach (Node node in nodes)
         {
-            DialogueNodeX dialogueNode = node as DialogueNodeX;
-            if(dialogueNode != null && dialogueNode.ID == 0) return dialogueNode;
+            TextAdventureNodeX TAMNode = node as TextAdventureNodeX;
+            if(TAMNode != null && TAMNode.name == "Root") return TAMNode;
         }
 
         return null;
     }
 
-    public DialogueNode GenerateDialogueNodeGraph()
+    public void TEST()
     {
-        return ConvertToDialogueNode(GetRootNode());
-    }
+        TextAdventureNodeX node = GetRootNode();
 
-    public static DialogueNode ConvertToDialogueNode(TextAdventureNodeX nodeX)
-    {
-        DialogueNode dialogueNode = new DialogueNode(null);
-        /*dialogueNode.ID = nodeX.ID;
-        dialogueNode.dialogue = nodeX.dialogue;*/
-        dialogueNode.connections = new List<ConnectionNode>();
-
-        Debug.Log("Root: " + nodeX.ToString());
-
-        foreach(TextAdventureNodeX node in nodeX.GetTAMConnections())
+        if(node == null)
         {
-            switch (node.GetNodeType())
-            {
-                default:
-                case NodeType.Undefined: break;
-
-                case NodeType.Dialogue:
-                    /*DialogueNodeX dialogueNodeX = node as DialogueNodeX;
-                    DialogueNode dialogueNode = new DialogueNode();*/
-                    /*dialogueNode.ID = nodeX.ID;
-                    dialogueNode.dialogue = nodeX.dialogue;*/
-                    dialogueNode.connections = new List<ConnectionNode>();
-                    break;
-
-                case NodeType.Connection:
-
-                break;
-
-                case NodeType.Condition:
-
-                break;
-            }
-
-            ConnectionNodeX connectionNodeX = node as ConnectionNodeX;
-            if(connectionNodeX == null) continue;
-
-            Debug.Log("Here's a Connection: " + connectionNodeX.ToString());
-            ConnectionNode nodeConnection = new ConnectionNode(null);
-            DialogueNodeX parentNode = connectionNodeX.GetInputNode<DialogueNodeX>("parentNode");
-            DialogueNodeX targetNode = connectionNodeX.GetOutputNode<DialogueNodeX>("targetNode");
-            Debug.Log("Port Info: " + node.GetInputNodePortInfo("parentNode"));
-            Debug.Log("Do we have parent node? " + parentNode.EvaluateForNullReference());
-            Debug.Log("Port Info: " + node.GetInputNodePortInfo("targetNode"));
-            Debug.Log("Do we have target node? " + targetNode.EvaluateForNullReference());
-
-            /*nodeConnection.targetNode = ConvertToDialogueNode(targetNode);
-            nodeConnection.validVerbs = connectionNodeX.validVerbs;
-            dialogueNode.connections.Add(nodeConnection);*/
+            Debug.Log("[TextAdventureXNodeGraph] Couldn't find a Root Node inside the Graph. Make sure you have a node named Root first.");
+            return;
         }
-
-        /*foreach (NodePort outputPort in nodeX.Outputs)
-        {
-            foreach (NodePort inputPort in outputPort.GetConnections())
-            {
-                if (inputPort.node != null)
-                {
-                    ConnectionNodeX connectionNodeX = inputPort.node as ConnectionNodeX;
-                    if (connectionNodeX != null)
-                    {
-                        Debug.Log("Here's a Connection: " + connectionNodeX.ToString());
-                        ConnectionNode nodeConnection = new ConnectionNode();
-                        nodeConnection.targetNode = ConvertToDialogueNode(inputPort.node as DialogueNodeX);
-                        nodeConnection.validVerbs = connectionNodeX.validVerbs;
-                        dialogueNode.connections.Add(nodeConnection);
-                    }
-                }
-            }
-        }*/
-
-        return dialogueNode;
-    }
-
-    public static void TEST_PROPERTYSTUFF()
-    {
         
+        node.Reset();
+        Debug.Log("[TextAdventureXNodeGraph]: " + node.ToString());
     }
 
 }

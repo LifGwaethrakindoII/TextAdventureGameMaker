@@ -1,15 +1,14 @@
 using System.Collections;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 using XNode;
 
 /*===========================================================================
 **
-** Class:  ConnectionNodeX
+** Class:  JumpNodeX
 **
-** Purpose: X-Node representing a ConnectionNode.
+** Purpose: X-Node acting as a JumpNode.
 **
 **
 ** Author: Lîf Gwaethrakindo
@@ -18,11 +17,11 @@ using XNode;
 namespace Voidless.TextAdventureMaker
 {
 [Serializable]
-public class ConnectionNodeX : TextAdventureNodeX
+public class JumpNodeX : TextAdventureNodeX
 {
-    public List<string> validVerbs;
+    public string nodeName;
 
     /// <returns>Node Type.</returns>
-    public override NodeType GetNodeType() { return NodeType.Connection; }
+    public override NodeType GetNodeType() { return NodeType.Jumper; }
 }
 }

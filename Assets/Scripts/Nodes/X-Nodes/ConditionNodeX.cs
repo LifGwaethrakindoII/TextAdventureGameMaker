@@ -1,15 +1,14 @@
 using System.Collections;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 using XNode;
 
 /*===========================================================================
 **
-** Class:  ConnectionNodeX
+** Class:  ConditionNodeX
 **
-** Purpose: X-Node representing a ConnectionNode.
+** Purpose: X-Node acting as a ConditionNode.
 **
 **
 ** Author: Lîf Gwaethrakindo
@@ -18,11 +17,11 @@ using XNode;
 namespace Voidless.TextAdventureMaker
 {
 [Serializable]
-public class ConnectionNodeX : TextAdventureNodeX
+public class ConditionNodeX : TextAdventureNodeX
 {
-    public List<string> validVerbs;
+    public ComparerGroup[] comparers;
 
     /// <returns>Node Type.</returns>
-    public override NodeType GetNodeType() { return NodeType.Connection; }
+    public override NodeType GetNodeType() { return NodeType.Condition; }
 }
 }

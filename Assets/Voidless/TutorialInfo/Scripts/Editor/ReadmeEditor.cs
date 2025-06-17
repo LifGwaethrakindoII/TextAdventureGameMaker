@@ -7,7 +7,7 @@ using System.IO;
 using System.Reflection;
 
 [CustomEditor(typeof(Readme))]
-[InitializeOnLoad]
+//[InitializeOnLoad]
 public class ReadmeEditor : Editor
 {
     static string s_ShowedReadmeSessionStateName = "ReadmeEditor.showedReadme";

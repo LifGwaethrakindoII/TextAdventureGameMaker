@@ -1,0 +1,904 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9017901698983958639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda5b9150f46673468ecd256f8f6fdbf, type: 3}
+  m_Name: Dialogue Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 296, y: 72}
+  ports:
+    keys:
+    - children
+    - parent
+    - next
+    values:
+    - _fieldName: children
+      _node: {fileID: -9017901698983958639}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX[], Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parent
+        node: {fileID: 2874006433066090484}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parent
+      _node: {fileID: -9017901698983958639}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: next
+        node: {fileID: -4050423274992979223}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -9017901698983958639}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: 
+  children: []
+  dialogue: K', bye then.
+--- !u!114 &-8895173870370041675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175137e6ab0d3e346955a81010132848, type: 3}
+  m_Name: Connection Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 120, y: 680}
+  ports:
+    keys:
+    - parent
+    - next
+    values:
+    - _fieldName: parent
+      _node: {fileID: -8895173870370041675}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: children
+        node: {fileID: 5737903534545418530}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -8895173870370041675}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: 
+  validVerbs: []
+--- !u!114 &-7956098026835043411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175137e6ab0d3e346955a81010132848, type: 3}
+  m_Name: Connection Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 296, y: -104}
+  ports:
+    keys:
+    - parent
+    - next
+    values:
+    - _fieldName: parent
+      _node: {fileID: -7956098026835043411}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: children
+        node: {fileID: -5655552086881811219}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -7956098026835043411}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: -5655552086881811219}
+  next: {fileID: 0}
+  _name: Poopy Poo
+  validVerbs: []
+--- !u!114 &-6138738208340615376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf20239e6be097429d0e3edd4511bbf, type: 3}
+  m_Name: Jump Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 184, y: -280}
+  ports:
+    keys:
+    - parent
+    - next
+    values:
+    - _fieldName: parent
+      _node: {fileID: -6138738208340615376}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: children
+        node: {fileID: -5655552086881811219}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -6138738208340615376}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: Jumpy Joe
+  nodeName: 
+--- !u!114 &-5655552086881811219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda5b9150f46673468ecd256f8f6fdbf, type: 3}
+  m_Name: Dialogue Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -264, y: -88}
+  ports:
+    keys:
+    - children
+    - parent
+    - next
+    - quat 0
+    - quat 1
+    - quat 2
+    - quat 3
+    - quat 4
+    - quat 5
+    - quat 6
+    values:
+    - _fieldName: children
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX[], Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parent
+        node: {fileID: -4050423274992979223}
+        reroutePoints: []
+      - fieldName: parent
+        node: {fileID: -7956098026835043411}
+        reroutePoints: []
+      - fieldName: parent
+        node: {fileID: 650408470050943461}
+        reroutePoints: []
+      - fieldName: parent
+        node: {fileID: -6138738208340615376}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parent
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: quat 0
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: quat 1
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: quat 2
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: quat 3
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: quat 4
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: quat 5
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: quat 6
+      _node: {fileID: -5655552086881811219}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: Root
+  children:
+  - {fileID: -4050423274992979223}
+  - {fileID: -7956098026835043411}
+  - {fileID: 650408470050943461}
+  dialogue: Hello, my name is Smellano.
+--- !u!114 &-4050423274992979223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175137e6ab0d3e346955a81010132848, type: 3}
+  m_Name: Connection Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 56, y: 72}
+  ports:
+    keys:
+    - parent
+    - next
+    values:
+    - _fieldName: parent
+      _node: {fileID: -4050423274992979223}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: children
+        node: {fileID: -5655552086881811219}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -4050423274992979223}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parent
+        node: {fileID: -9017901698983958639}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: -5655552086881811219}
+  next: {fileID: -9017901698983958639}
+  _name: Papa John
+  validVerbs: []
+--- !u!114 &-2794411698968636625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013028891f635da409c1fb647e6e21c6, type: 3}
+  m_Name: Text Adventure X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 168, y: -72}
+  ports:
+    keys:
+    - parent
+    - node
+    values:
+    - _fieldName: parent
+      _node: {fileID: -2794411698968636625}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: node
+        node: {fileID: 4985722563584056303}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: node
+      _node: {fileID: -2794411698968636625}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  ID: 0
+  description: 
+  parent:
+    ID: 0
+    description: 
+    connections: []
+  node:
+    ID: 0
+    description: 
+    connections: []
+--- !u!114 &-1796966812462522540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda5b9150f46673468ecd256f8f6fdbf, type: 3}
+  m_Name: Dialogue Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 568, y: 392}
+  ports:
+    keys:
+    - children
+    - parent
+    - next
+    values:
+    - _fieldName: children
+      _node: {fileID: -1796966812462522540}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX[], Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parent
+      _node: {fileID: -1796966812462522540}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -1796966812462522540}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: 
+  children: []
+  dialogue: Maybe you do't have what it takes to overcome my challenge, sir Romulo.
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af88a1ea04f28744ba0eba996a4ac88f, type: 3}
+  m_Name: TestGraph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -5655552086881811219}
+  - {fileID: -7956098026835043411}
+  - {fileID: -4050423274992979223}
+  - {fileID: 650408470050943461}
+  - {fileID: -9017901698983958639}
+  - {fileID: -8895173870370041675}
+  - {fileID: 5737903534545418530}
+  - {fileID: 8978385513226599432}
+  - {fileID: -1796966812462522540}
+  - {fileID: 2874006433066090484}
+  - {fileID: -6138738208340615376}
+--- !u!114 &650408470050943461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda5b9150f46673468ecd256f8f6fdbf, type: 3}
+  m_Name: Dialogue Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 24, y: -584}
+  ports:
+    keys:
+    - children
+    - parent
+    - next
+    values:
+    - _fieldName: children
+      _node: {fileID: 650408470050943461}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX[], Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parent
+      _node: {fileID: 650408470050943461}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: children
+        node: {fileID: -5655552086881811219}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 650408470050943461}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: Papara poopy
+  children:
+  - {fileID: 0}
+  dialogue: How is you?
+--- !u!114 &2874006433066090484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175137e6ab0d3e346955a81010132848, type: 3}
+  m_Name: Connection Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 696, y: 232}
+  ports:
+    keys:
+    - parent
+    - next
+    values:
+    - _fieldName: parent
+      _node: {fileID: 2874006433066090484}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: children
+        node: {fileID: -9017901698983958639}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 2874006433066090484}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: 
+  validVerbs: []
+--- !u!114 &4985722563584056303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 013028891f635da409c1fb647e6e21c6, type: 3}
+  m_Name: Text Adventure X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -72, y: -88}
+  ports:
+    keys:
+    - parent
+    - node
+    values:
+    - _fieldName: parent
+      _node: {fileID: 4985722563584056303}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: targetNode
+        node: {fileID: 5617257670780014899}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: node
+      _node: {fileID: 4985722563584056303}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parent
+        node: {fileID: -2794411698968636625}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  ID: 0
+  description: 
+  parent:
+    ID: 0
+    description: 
+    connections: []
+  node:
+    ID: 0
+    description: 
+    connections: []
+--- !u!114 &5617257670780014899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44543a32fa16d74e8bf7523527f84d5, type: 3}
+  m_Name: Text Adventure Connection X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -344, y: -56}
+  ports:
+    keys:
+    - targetNode
+    values:
+    - _fieldName: targetNode
+      _node: {fileID: 5617257670780014899}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureXNode, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parent
+        node: {fileID: 4985722563584056303}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  targetNode: {fileID: 0}
+  validVerbs:
+  - Open
+--- !u!114 &5737903534545418530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d533b132532dfa4a8856f503e9076da, type: 3}
+  m_Name: Text Adventure Selector Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -296, y: 280}
+  ports:
+    keys:
+    - children
+    - parent
+    - next
+    values:
+    - _fieldName: children
+      _node: {fileID: 5737903534545418530}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX[], Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parent
+        node: {fileID: 8978385513226599432}
+        reroutePoints: []
+      - fieldName: parent
+        node: {fileID: -8895173870370041675}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parent
+      _node: {fileID: 5737903534545418530}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 5737903534545418530}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: 
+  children: []
+--- !u!114 &6889240795698882849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Int Arithmetic X
+  m_EditorClassIdentifier: Assembly-CSharp:Voidless.XNode:IntArithmeticXNode
+  graph: {fileID: 11400000}
+  position: {x: 1352, y: 328}
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    values:
+    - _fieldName: a
+      _node: {fileID: 6889240795698882849}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: result
+        node: {fileID: 8783224851016215929}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _node: {fileID: 6889240795698882849}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: result
+      _node: {fileID: 6889240795698882849}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  a: 0
+  b: 100
+  result: 0
+  operation: 0
+--- !u!114 &8783224851016215929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Int Arithmetic X
+  m_EditorClassIdentifier: Assembly-CSharp:Voidless.XNode:IntArithmeticXNode
+  graph: {fileID: 11400000}
+  position: {x: 1113.2776, y: 224.37865}
+  ports:
+    keys:
+    - a
+    - b
+    - result
+    values:
+    - _fieldName: a
+      _node: {fileID: 8783224851016215929}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _node: {fileID: 8783224851016215929}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: result
+      _node: {fileID: 8783224851016215929}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: a
+        node: {fileID: 6889240795698882849}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  a: 5
+  b: 80
+  result: 0
+  operation: 0
+--- !u!114 &8978385513226599432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399e41bc88279d446a4339cd4ba7a953, type: 3}
+  m_Name: Condition Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 104, y: 328}
+  ports:
+    keys:
+    - parent
+    - next
+    values:
+    - _fieldName: parent
+      _node: {fileID: 8978385513226599432}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: children
+        node: {fileID: 5737903534545418530}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 8978385513226599432}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: 
+  comparers:
+  - intComparers:
+    - key: SmellanoPatience
+      comparison: 3
+      value: 5
+    floatComparers: []
+    stringComparers: []
+    boolComparers: []

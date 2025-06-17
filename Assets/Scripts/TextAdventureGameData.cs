@@ -19,7 +19,6 @@ public class TextAdventureGameData : ScriptableObject
     [SerializeField] private StringFloatDictionary _floatDictionary;
     [SerializeField] private StringBoolDictionary _boolDictionary;
     [SerializeField] private StringIntDictionary _intDictionary;
-    private DialogueNode _rootNode;
 
     /// <summary>Gets nodeGraph property.</summary>
     public TextAdventureXNodeGraph nodeGraph { get { return _nodeGraph; } }
@@ -29,13 +28,6 @@ public class TextAdventureGameData : ScriptableObject
 
     /// <summary>Gets typingDuration property.</summary>
     public float typingDuration { get { return _typingDuration; } }
-
-    /// <summary>Gets and Sets rootNode property.</summary>
-    public DialogueNode rootNode
-    {
-        get { return _rootNode; }
-        protected set { _rootNode = value; }
-    }
 
     /// <summary>Gets stringDictionary property.</summary>
     public StringStringDictionary stringDictionary { get { return _stringDictionary; } }
@@ -59,17 +51,14 @@ public class TextAdventureGameData : ScriptableObject
     public void GenerateGraphJSON()
     {
         if(nodeGraph == null) return;
-    
-        rootNode = nodeGraph.GenerateDialogueNodeGraph();
-        string JSON = VJSONSerializer.SerializeToJSON<DialogueNode>(rootNode, VString.GetProjectPath() + " / Resources / Dialogue Graphs  / X", true);
-
-        Debug.Log("Generated JSON: " + JSON);
     }
 
-    [Button("Test Stuff")]
+    [Button("Test X-Node Graph")]
     private void TEST_STUFF()
     {
-        
+        if(nodeGraph == null) return;
+
+        nodeGraph.TEST(); 
     }
 }
 }

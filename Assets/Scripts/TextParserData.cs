@@ -13,7 +13,7 @@ public enum WordCategory { Verb, Noun, Adjective, Article }
 [Serializable] public class WordCategoryStringListDictionary : SerializableDictionary<WordCategory, List<string>> { /*...*/ }
 
 [Serializable]
-public struct TextParserData
+public class TextParserData
 {
     //[SerializeField] private StringWordCategoryDictionary _wordCategoryMap;
     [SerializeField] private List<string> _verbs;

@@ -1,15 +1,12 @@
 using System.Collections;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
-using XNode;
 
 /*===========================================================================
 **
-** Class:  ConnectionNodeX
+** Class:  SetterNodeX
 **
-** Purpose: X-Node representing a ConnectionNode.
+** Purpose: X-Node representing a SetterNode.
 **
 **
 ** Author: Lîf Gwaethrakindo
@@ -17,12 +14,11 @@ using XNode;
 ===========================================================================*/
 namespace Voidless.TextAdventureMaker
 {
-[Serializable]
-public class ConnectionNodeX : TextAdventureNodeX
+public class SetterNodeX : TextAdventureNodeX
 {
-    public List<string> validVerbs;
+    public SetterGroup setters;
 
     /// <returns>Node Type.</returns>
-    public override NodeType GetNodeType() { return NodeType.Connection; }
+    public override NodeType GetNodeType() { return NodeType.Setter; }
 }
 }

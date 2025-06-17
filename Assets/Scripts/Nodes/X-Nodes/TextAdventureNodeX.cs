@@ -5,131 +5,69 @@ using System.Text;
 using UnityEngine;
 using XNode;
 using UnityEditor.Build.Pipeline;
+using Voidless.XNode;
 
 using IO = XNode.NodePort.IO;
 
+/*===========================================================================
+**
+** Class:  TextAdventureNodeX
+**
+** Purpose: X-Node representing a Text-Adventure Node.
+**
+**
+** Author: Lîf Gwaethrakindo
+**
+===========================================================================*/
 namespace Voidless.TextAdventureMaker
 {
+public enum NodeType { Undefined, Dialogue, Condition, Connection, Setter, Selector, Sequencer, Jumper }
+
+public enum NodeResult { Undefined, Success, Running, Failure, Error }
+
 [Serializable]
 public abstract class TextAdventureNodeX : Node
 {
     [Input] public TextAdventureNodeX parent;
     [Output] public TextAdventureNodeX next;
-    public NodeType childrenNodeType;
+    public string _name;
+
+    /// <summary>Gets and Sets name property.</summary>
+    public string name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
 
     /// <returns>Node Type.</returns>
     public virtual NodeType GetNodeType() { return NodeType.Undefined; }
 
-    /// <summary>Gets Connection Nodes.</summary>
-    /// <param name="_portName">Name of the NodePort containing the Nodes.</param>
-    /// <param name="_direction">Direction of the Nodes [Input by default].</param>
-    /// <param name="_default">Default value to return if no Nodes could be retreived [null by default].</param>
-    /// <returns>Connection Nodes, default otherwise.</returns>
-    public T[] GetNodes<T>(string _portName, IO _direction = IO.Input, T[] _default = default) where T : Node
+    /// <summary>GetValue should be overridden to return a value for any specified output port.</summary>
+    public override object GetValue(NodePort port)
     {
-        NodePort nodePort =  _direction == IO.Input ? GetInputPort(_portName) : GetOutputPort(_portName);
-
-        if(nodePort == null) return _default;
-
-        int length = nodePort.ConnectionCount;
-
-        if(length == 0) return _default;
-
-        List<T> nodes = new List<T>();
-
-        for(int i = 0; i < length; i++)
+        switch(port.fieldName)
         {
-            NodePort port = nodePort.GetConnection(i);
-            
-            if(port == null) continue;
-
-            T node = port.node as T;
-
-            if(node != null) continue;
-
-            nodes.Add(node);
+            case "parent":  return parent;
+            case "next":    return next;
+            default:        return default(object);
         }
-
-        return nodes.Count > 0 ? nodes.ToArray() : _default;
     }
 
-    /// <summary>Gets Connection Node.</summary>
-    /// <param name="_portName">Name of the NodePort containing the Node.</param>
-    /// <param name="_direction">Direction of the Node [Input by default].</param>
-    /// <param name="_default">Default value to return if no Node could be retreived [null by default].</param>
-    /// <returns>Connection Node, default otherwise.</returns>
-    public T GetNode<T>(string _portName, IO _direction = IO.Input, T _default = default) where T : Node
+    public TextAdventureNodeX GetParent()
     {
-        NodePort nodePort =  _direction == IO.Input ? GetInputPort(_portName) : GetOutputPort(_portName);
+        if(parent == null) parent = this.GetInputNode<TextAdventureNodeX>("parent");
 
-        if(nodePort == null) return _default;
-
-        T result = nodePort.Connection.node as T;
-        bool success = result != null;
-
-        return success ? result : _default;
+        return parent;
     }
 
-    /// <summary>Gets Input Connection Node.</summary>
-    /// <param name="_portName">Name of the NodePort containing the Node.</param>
-    /// <param name="_default">Default value to return if no Node could be retreived [null by default].</param>
-    /// <returns>Input Connection Node, default otherwise.</returns>
-    public T GetInputNode<T>(string _portName, T _default = default) where T : Node
+    public TextAdventureNodeX GetNext()
     {
-        return GetNode<T>(_portName, IO.Input, _default);
+        if(next == null) next = this.GetOutputNode<TextAdventureNodeX>("next");
+
+        return next;
     }
 
-    /// <summary>Gets Output Connection Node.</summary>
-    /// <param name="_portName">Name of the NodePort containing the Node.</param>
-    /// <param name="_default">Default value to return if no Node could be retreived [null by default].</param>
-    /// <returns>Output Connection Node, default otherwise.</returns>
-    public T GetOutputNode<T>(string _portName, T _default = default) where T : Node
-    {
-        return GetNode<T>(_portName, IO.Output, _default);
-    }
-
-    /// <summary>Gets information of NodePort.</summary>
-    /// <param name="_portName">Name of the NodePort.</param>
-    /// <returns>NodePort's info.</returns>
-    public string GetInputNodePortInfo(string _portName)
-    {
-        NodePort port = GetInputPort(_portName);
-
-        if (port == null) return string.Empty;
-
-        StringBuilder builder = new StringBuilder();
-
-        builder.Append("{ Field Name: ");
-        builder.Append(port.fieldName);
-        builder.Append(", Type: ");
-        builder.Append(port.GetType().Name);
-        builder.Append(", Direction: ");
-        builder.Append(port.direction);
-        builder.Append(", Connection Type: ");
-        builder.Append(port.connectionType.ToString());
-        builder.Append(", Type Constraint: ");
-        builder.Append(port.typeConstraint.ToString());
-        builder.Append(", Dynamic: ");
-        builder.Append(port.IsDynamic.ToString());
-        builder.Append(" }");
-
-        return builder.ToString();
-    }
-
-    /// <returns>This X-Node into a TextAdventure Node.</returns>
-    public virtual TextAdventureNode ToTextAdventureNode() => null;
-
-    /// <returns>String representing this Node's info.</returns>
-    public override string ToString()
-    {
-        StringBuilder builder = new StringBuilder();
-
-        builder.Append("{ Node Type =  ");
-        builder.Append(GetNodeType().ToString());
-
-        return builder.ToString();
-    }
-
+    /// <summary>Iterates through connections of the type TextAdventureNodeX.</summary>
     public virtual IEnumerable<TextAdventureNodeX> GetTAMConnections()
     {
         foreach (NodePort outputPort in Outputs)
@@ -140,6 +78,37 @@ public abstract class TextAdventureNodeX : Node
                 if(node != null) yield return node;
             }
         }
+    }
+
+    /// <summary>Iterates through children connections [or single child].</summary>
+    public virtual IEnumerable<TextAdventureNodeX> IterateThroughChildren()
+    {
+        yield return GetNext();
+    }
+
+    /// <summary>Resets Node's port references.</summary>
+    public virtual void Reset()
+    {
+        parent = null;
+        next = null;
+    }
+
+    /// <returns>String representing this Node's info.</returns>
+    public override string ToString()
+    {
+        StringBuilder builder = new StringBuilder();
+
+        builder.Append("{ Node Type =  ");
+        builder.Append(GetNodeType().ToString());
+        builder.Append(", Has parent: ");
+        builder.Append(GetParent() != null);
+        builder.Append(", Has children: ");
+        builder.Append(GetNext() != null);
+        builder.Append(", Name: ");
+        builder.Append(name != string.Empty ? name : "NONE");
+        builder.Append(" }");
+
+        return builder.ToString();
     }
 }
 }
