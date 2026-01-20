@@ -12,5 +12,14 @@ public class ComparerGroup
     public FloatComparer[] floatComparers;
     public StringComparer[] stringComparers;
     public BoolComparer[] boolComparers;
+
+    public bool Evaluate()
+    {
+        return false;
+        /*if(intComparers != null && intComparers.Length > 0) foreach(IntegerComparer intComparer in intComparers)
+        {
+            if()
+        }*/
+    }
 }
 }

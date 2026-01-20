@@ -7,307 +7,340 @@ using Sirenix.OdinInspector;
 
 namespace Voidless.TextAdventureMaker
 {
-public enum GameState
-{
-    None,
-    AIWriting,
-    PlayerWriting
-}
-
-public class TextAdventureGame : Singleton<TextAdventureGame>, IFiniteStateMachine<GameState>
-{
-    [Space(5f)]
-    [Header("Text-Adventure Game's Attributes:")]
-    [SerializeField] private TextAdventureGameData _gameData;
-    [SerializeField] private TextAdventureGameUI _gameUI;
-    [SerializeField] private GameObjectPool<PoolTextMeshProUGUI> _textMeshPool;
-    [SerializeField] private bool _debug;
-    private GameState _state;
-    private GameState _previousState;
-    private StringStringDictionary _stringDictionary;
-    private StringFloatDictionary _floatDictionary;
-    private StringBoolDictionary _boolDictionary;
-    private StringIntDictionary _intDictionary;
-
-    /// <summary>Gets and Sets gameData property.</summary>
-    public TextAdventureGameData gameData
+    public enum GameState
     {
-        get { return _gameData; }
-        set { _gameData = value; }
+        None,
+        AIWriting,
+        PlayerWriting
     }
 
-    /// <summary>Gets and Sets gameUI property.</summary>
-    public TextAdventureGameUI gameUI
+    public class TextAdventureGame : Singleton<TextAdventureGame>, IFiniteStateMachine<GameState>
     {
-        get { return _gameUI; }
-        set { _gameUI = value; }
-    }
+        [Space(5f)]
+        [Header("Text-Adventure Game's Attributes:")]
+        [SerializeField] private TextAdventureGameData _gameData;
+        [SerializeField] private TextAdventureGameUI _gameUI;
+        [SerializeField] private GameObjectPool<PoolTextMeshProUGUI> _textMeshPool;
+        [SerializeField] private bool _debug;
+        private GameState _state;
+        private GameState _previousState;
+        private StringStringDictionary _stringDictionary;
+        private StringFloatDictionary _floatDictionary;
+        private StringBoolDictionary _boolDictionary;
+        private StringIntDictionary _intDictionary;
+        private TextAdventureXNodeGraph _nodeGraph;
+        private TextAdventureNodeX _currentNode;
+        private Coroutine typingRoutine;
 
-    /// <summary>Gets and Sets textMeshPool property.</summary>
-    public GameObjectPool<PoolTextMeshProUGUI> textMeshPool
-    {
-        get { return _textMeshPool; }
-        set { _textMeshPool = value; }
-    }
+#region Getters/Setters:
+        /// <returns>True if in play mode.</returns>
+        private bool playMode { get { return Application.isPlaying; } }
 
-    /// <summary>Gets and Sets debug property.</summary>
-    public bool debug
-    {
-        get { return _debug; }
-        set { _debug = value; }
-    }
-
-    /// <summary>Gets and Sets state property.</summary>
-    public GameState state
-    {
-        get { return _state; }
-        set { _state = value; }
-    }
-
-    /// <summary>Gets and Sets previousState property.</summary>
-    public GameState previousState
-    {
-        get { return _previousState; }
-        set { _previousState = value; }
-    }
-
-    /// <summary>Gets and Sets stringDictionary property.</summary>
-    public static StringStringDictionary stringDictionary
-    {
-        get { return Instance._stringDictionary; }
-        private set { Instance._stringDictionary = value; }
-    }
-
-    /// <summary>Gets and Sets floatDictionary property.</summary>
-    public static StringFloatDictionary floatDictionary
-    {
-        get { return Instance._floatDictionary; }
-        private set { Instance._floatDictionary = value; }
-    }
-
-    /// <summary>Gets and Sets boolDictionary property.</summary>
-    public static StringBoolDictionary boolDictionary
-    {
-        get { return Instance._boolDictionary; }
-        private set { Instance._boolDictionary = value; }
-    }
-
-    /// <summary>Gets and Sets intDictionary property.</summary>
-    public static StringIntDictionary intDictionary
-    {
-        get { return Instance._intDictionary; }
-        private set { Instance._intDictionary = value; }
-    }
-
-    /// <summary>Called internally after Awake.</summary>
-    protected override void OnAwake()
-    {
-        base.OnAwake();
-        if(gameData != null)
+        /// <summary>Gets and Sets gameData property.</summary>
+        public TextAdventureGameData gameData
         {
-            gameData.Initialize();
-
-            stringDictionary = new StringStringDictionary();
-            floatDictionary = new StringFloatDictionary();
-            boolDictionary = new StringBoolDictionary();
-            intDictionary = new StringIntDictionary();
-            stringDictionary.CopyFrom(gameData.stringDictionary);
-            floatDictionary.CopyFrom(gameData.floatDictionary);
-            boolDictionary.CopyFrom(gameData.boolDictionary);
-            intDictionary.CopyFrom(gameData.intDictionary);
-        }
-        textMeshPool.Initialize();
-    }
-
-    /// <summary>Callback invoked after the scene loads.</summary>
-    private void Start()
-    {
-        if (Instance.gameUI != null) Instance.gameUI.commandLineInterface.onMessageSent += OnMessageSent;
-    }
-
-    /// <summary>Interprets player's input into a command.</summary>
-    /// <param name="_command">Player's input.</param>
-    public static void ParseCommand(string _command)
-    {
-        if(Instance.gameData == null)
-        {
-            DebugMessage("[TextAdventureGame] Game Data not assigned.", LogType.Error);
-            return;
+            get { return _gameData; }
+            set { _gameData = value; }
         }
 
-        CreateTextMesh(_command);
-
-        string[] words = _command.ToLower().Split(' '); /// Separate the input sentence into separate words.
-        StringWordCategoryDictionary wordCategoryMap = Instance.gameData.parserData.wordCategoryMap;
-        WordCategoryStringListDictionary dataWords = Instance.gameData.parserData.wordsMap;
-        WordCategoryStringListDictionary categoryWords = new WordCategoryStringListDictionary();
-
-        DebugMessage("[TextAdventureGame] Words have been split into: " + words.CollectionToString(false));
-
-        /// Match words with their respective categories:
-        foreach(string word in words)
+        /// <summary>Gets and Sets gameUI property.</summary>
+        public TextAdventureGameUI gameUI
         {
-            if(wordCategoryMap.ContainsKey(word))
+            get { return _gameUI; }
+            set { _gameUI = value; }
+        }
+
+        /// <summary>Gets and Sets textMeshPool property.</summary>
+        public GameObjectPool<PoolTextMeshProUGUI> textMeshPool
+        {
+            get { return _textMeshPool; }
+            set { _textMeshPool = value; }
+        }
+
+        /// <summary>Gets and Sets debug property.</summary>
+        public bool debug
+        {
+            get { return _debug; }
+            set { _debug = value; }
+        }
+
+        /// <summary>Gets and Sets state property.</summary>
+        public GameState state
+        {
+            get { return _state; }
+            set { _state = value; }
+        }
+
+        /// <summary>Gets and Sets previousState property.</summary>
+        public GameState previousState
+        {
+            get { return _previousState; }
+            set { _previousState = value; }
+        }
+
+        /// <summary>Gets and Sets stringDictionary property.</summary>
+        public static StringStringDictionary stringDictionary
+        {
+            get { return Instance._stringDictionary; }
+            private set { Instance._stringDictionary = value; }
+        }
+
+        /// <summary>Gets and Sets floatDictionary property.</summary>
+        public static StringFloatDictionary floatDictionary
+        {
+            get { return Instance._floatDictionary; }
+            private set { Instance._floatDictionary = value; }
+        }
+
+        /// <summary>Gets and Sets boolDictionary property.</summary>
+        public static StringBoolDictionary boolDictionary
+        {
+            get { return Instance._boolDictionary; }
+            private set { Instance._boolDictionary = value; }
+        }
+
+        /// <summary>Gets and Sets intDictionary property.</summary>
+        public static StringIntDictionary intDictionary
+        {
+            get { return Instance._intDictionary; }
+            private set { Instance._intDictionary = value; }
+        }
+#endregion
+
+        /// <summary>Called internally after Awake.</summary>
+        protected override void OnAwake()
+        {
+            base.OnAwake();
+            if(gameData != null)
             {
-                WordCategory category = wordCategoryMap[word];
-                if(!categoryWords.ContainsKey(category)) categoryWords.Add(category, new List<string>());
-                categoryWords[category].Add(word);
+                gameData.Initialize();
+
+                stringDictionary = new StringStringDictionary();
+                floatDictionary = new StringFloatDictionary();
+                boolDictionary = new StringBoolDictionary();
+                intDictionary = new StringIntDictionary();
+                stringDictionary.CopyFrom(gameData.stringDictionary);
+                floatDictionary.CopyFrom(gameData.floatDictionary);
+                boolDictionary.CopyFrom(gameData.boolDictionary);
+                intDictionary.CopyFrom(gameData.intDictionary);
             }
+            textMeshPool.Initialize();
         }
 
-        /// Match categories to GameObjects:
-        /*if (categorizedWords.ContainsKey(WordCategory.Verb) && categorizedWords.ContainsKey(WordCategory.Noun))
+        /// <summary>Callback invoked after the scene loads.</summary>
+        private void Start()
         {
-            List<string> verbs = categorizedWords[WordCategory.Verb];
-            List<string> nouns = categorizedWords[WordCategory.Noun];
-            foreach (var verb in verbs)
+            if (Instance.gameUI != null) Instance.gameUI.commandLineInterface.onMessageSent += OnMessageSent;
+        }
+
+        /// <summary>Interprets player's input into a command.</summary>
+        /// <param name="_command">Player's input.</param>
+        public static void ParseCommand(string _command)
+        {
+            if(Instance.gameData == null)
             {
-                foreach (var noun in nouns)
+                DebugMessage("[TextAdventureGame] Game Data not assigned.", LogType.Error);
+                return;
+            }
+
+            CreateTextMesh(_command);
+
+            string[] words = _command.ToLower().Split(' '); /// Separate the input sentence into separate words.
+            StringWordCategoryDictionary wordCategoryMap = Instance.gameData.parserData.wordCategoryMap;
+            WordCategoryStringListDictionary categoryWords = new WordCategoryStringListDictionary();
+
+            DebugMessage("[TextAdventureGame] Words have been split into: " + words.CollectionToString(false));
+
+            /// Match words with their respective categories:
+            foreach(string word in words)
+            {
+                if(wordCategoryMap.ContainsKey(word))
                 {
-                    if (objectNames.ContainsKey(noun))
-                    {
-                        GameObject gameObject = objectNames[noun];
-                        switch (gameObject)
-                        {
-                            case GameObject.Door:
-                                OpenDoor();
-                                break;
-                            // Add cases for other game objects
-                        }
-                    }
+                    WordCategory category = wordCategoryMap[word];
+                    if(!categoryWords.ContainsKey(category)) categoryWords.Add(category, new List<string>());
+                    categoryWords[category].Add(word);
                 }
             }
         }
-        else
+
+        /// <summary>Creates Pool-TextMesh with given message.</summary>
+        /// <param name="_message">Message to assign to recycled Pool-TextMesh</param>
+        /// <param name="_color">Optional Pool-TextMesh's color [UnambiguousColor.White by default]</param>
+        /// <returns>Recycled Pool-TextMesh, already introduced into UI's Layout.</returns>
+        public static PoolTextMeshProUGUI CreateTextMesh(string _message, UnambiguousColor _color = UnambiguousColor.White)
         {
-            Console.WriteLine("Invalid command.");
-        }*/
-    }
+            PoolTextMeshProUGUI poolTextMesh = Instance.textMeshPool.Recycle(Vector3.zero, Quaternion.identity);
 
-    /// <summary>Creates Pool-TextMesh with given message.</summary>
-    /// <param name="_message">Message to assign to recycled Pool-TextMesh</param>
-    /// <param name="_color">Optional Pool-TextMesh's color [UnambiguousColor.White by default]</param>
-    /// <returns>Recycled Pool-TextMesh, already introduced into UI's Layout.</returns>
-    public static PoolTextMeshProUGUI CreateTextMesh(string _message, UnambiguousColor _color = UnambiguousColor.White)
-    {
-        PoolTextMeshProUGUI poolTextMesh = Instance.textMeshPool.Recycle(Vector3.zero, Quaternion.identity);
+            if (poolTextMesh == null) return null;
 
-        if (poolTextMesh == null) return null;
+            Color color = VColor.GetUnambiguousColor(_color);
 
-        Color color = VColor.GetUnambiguousColor(_color);
+            poolTextMesh.textMesh.color = color;
+            poolTextMesh.textMesh.text = _message;
 
-        poolTextMesh.textMesh.color = color;
-        poolTextMesh.textMesh.text = _message;
+            if(Instance.gameUI != null) Instance.gameUI.AddTextMesh(poolTextMesh);
 
-        if(Instance.gameUI != null) Instance.gameUI.AddTextMesh(poolTextMesh);
-
-        return poolTextMesh;
-    }
-
-    /// <summary>Debugs message into the game console.</summary>
-    /// <param name="_message">Message to debug.</param>
-    /// <param name="_logType">Log Type [LogType.Log by default].</param>
-    public static void DebugMessage(string _message, LogType _logType = LogType.Log)
-    {
-        if(!Application.isPlaying)
-        {
-            VDebug.Log(_logType, _message);
-            return;
-        }
-        if(!Instance.debug) return;
-
-        UnambiguousColor color = UnambiguousColor.Transparent;
-
-        switch(_logType)
-        {
-            case LogType.Assert:
-            case LogType.Log:
-                color = UnambiguousColor.Grey;
-            break;
-
-            case LogType.Warning:
-                color = UnambiguousColor.Yellow;
-            break;
-
-            case LogType.Error:
-            case LogType.Exception:
-                color = UnambiguousColor.Red;
-            break;
+            return poolTextMesh;
         }
 
-        CreateTextMesh(_message, color);
-    }
-
-    /// <summary>Callback invoked when entering state.</summary>
-    /// <param name="_state">State entered.</param>
-    public void OnEnterState(GameState _state)
-    {
-        switch (_state)
+        private void UpdateUI()
         {
-            case GameState.AIWriting:
-                Instance.gameUI.commandLineInterface.Activate(false);
-            break;
-
-            case GameState.PlayerWriting:
-                Instance.gameUI.commandLineInterface.Activate(true);
-            break;
-        }
-
-        DebugMessage("Entered State: " + _state.ToString());
-    }
-
-    /// <summary>Callback invoked when exiting state.</summary>
-    /// <param name="_state">State exited.</param>
-    public void OnExitState(GameState _state) { /*...*/ }
-
-    /// <summary>callback invoked then the Command Line Interface has sent a message.</summary>
-    /// <param name="_message">Message sent by the Command Line Interface.</param>
-    private void OnMessageSent(string _message)
-    {
-        ParseCommand(_message);
-    }
-
-    [Button("TEST Player's Input")]
-    /// <summary>Tests Player's Input.</summary>
-    /// <param name="_playerInput">Player's Input.</param>
-    private void TEST_PlayerInput(string _playerInput)
-    {
-        ParseCommand(_playerInput);
-    }
-
-    [Button("Activate/Deactivate CLI")]
-    /// <summary>Activates/Deactivates CLI.</summary>
-    /// <param name="_activate">Activate? True by default.</param>
-    private void TEST_ActivateCommandLineInterface(bool _activate = true)
-    {
-        this.ChangeState(_activate ? GameState.PlayerWriting : GameState.AIWriting);
-    }
-
-    /// <summary>Typing's Coroutine.</summary>
-    /// <param name="_poolTextMesh">TextMesh where the typing will happen.</param>
-    /// <param name="_message">Message that is gonna be typed.</param>
-    /// <param name="onTypingEnds">Optional callback invoked when the typing routine comes to an end [null by default].</param>
-    public static IEnumerator TypingRoutine(PoolTextMeshProUGUI _poolTextMesh, string _message, Action onTypingEnds = null)
-    {
-        StringBuilder builder = new StringBuilder();
-        float d = Instance.gameData.typingDuration;
-        float t = 0.0f;
-
-        foreach(char character in _message)
-        {
-            builder.Append(character);
-            _poolTextMesh.textMesh.text = builder.ToString();
-
-            while(t < d)
+            if(_currentNode == null)
             {
-                t += Time.deltaTime;
-                yield return null;
+                DebugMessage("Dialogue Ended!", LogType.Warning);
+                return;
             }
 
-            t = 0.0f;
+            switch(_currentNode.GetNodeType())
+            {
+                case NodeType.Dialogue:
+                {
+                    DialogueNodeX dialogueNode = _currentNode as DialogueNodeX;
+                    //UIManager.ShowText(dialogueNode.dialogue);
+                }
+                break;
+
+                case NodeType.Condition:
+                {
+                    ConditionNodeX conditionNode = _currentNode as ConditionNodeX;
+
+                    _currentNode = conditionNode.Evaluate() ? conditionNode.next : null;
+                    UpdateUI(); // Immediate continue;
+                }
+                break;
+            }
         }
 
-        if(onTypingEnds != null) onTypingEnds();
+        /// <summary>Debugs message into the game console.</summary>
+        /// <param name="_message">Message to debug.</param>
+        /// <param name="_logType">Log Type [LogType.Log by default].</param>
+        public static void DebugMessage(string _message, LogType _logType = LogType.Log)
+        {
+            if(!Application.isPlaying)
+            {
+                VDebug.Log(_logType, _message);
+                return;
+            }
+            if(!Instance.debug) return;
+
+            UnambiguousColor color = UnambiguousColor.Transparent;
+
+            switch(_logType)
+            {
+                case LogType.Assert:
+                case LogType.Log:
+                    color = UnambiguousColor.Grey;
+                break;
+
+                case LogType.Warning:
+                    color = UnambiguousColor.Yellow;
+                break;
+
+                case LogType.Error:
+                case LogType.Exception:
+                    color = UnambiguousColor.Red;
+                break;
+            }
+
+            CreateTextMesh(_message, color);
+        }
+
+        /// <summary>Callback invoked when entering state.</summary>
+        /// <param name="_state">State entered.</param>
+        public void OnEnterState(GameState _state)
+        {
+            switch (_state)
+            {
+                case GameState.AIWriting:
+                    Instance.gameUI.commandLineInterface.Activate(false);
+                break;
+
+                case GameState.PlayerWriting:
+                    Instance.gameUI.commandLineInterface.Activate(true);
+                break;
+            }
+
+            DebugMessage("Entered State: " + _state.ToString());
+        }
+
+        /// <summary>Callback invoked when exiting state.</summary>
+        /// <param name="_state">State exited.</param>
+        public void OnExitState(GameState _state) { /*...*/ }
+
+        /// <summary>callback invoked then the Command Line Interface has sent a message.</summary>
+        /// <param name="_message">Message sent by the Command Line Interface.</param>
+        private void OnMessageSent(string _message)
+        {
+            ParseCommand(_message);
+        }
+
+        /// <summary>Displays Dialogue, then proceeds to enable polayer writing.</summary>
+        /// <param name="dialogueNode">Dialogue Node containing the text to display.</param>
+        public void DisplayDialogue(DialogueNodeX dialogueNode)
+        {
+            Action OnDialogueEnds = ()=>
+            {
+                this.ChangeState(GameState.PlayerWriting);
+                this.DispatchCoroutine(ref typingRoutine);
+            };
+
+            this.ChangeState(GameState.AIWriting);
+            PoolTextMeshProUGUI textMesh = CreateTextMesh(string.Empty);
+            this.StartCoroutine(TypingRoutine(textMesh, dialogueNode.dialogue, OnDialogueEnds), ref typingRoutine);
+        }
+
+#region Tests:
+        [Button("TEST Player's Input")]
+        /// <summary>Tests Player's Input.</summary>
+        /// <param name="_playerInput">Player's Input.</param>
+        private void TEST_PlayerInput(string _playerInput)
+        {
+            if(gameData == null)
+            {
+                Debug.LogError("[TextAdventureGame] No Game Data instance of time TextAdventureGameData has been referenced yet.");
+                return;
+            }
+
+            gameData.Initialize();
+            ParsedCommand command = gameData.parserData.ParseInput(_playerInput);
+            Debug.Log("[TextAdventureGame] ParsedCommand: " + command.ToString());
+            //ParseCommand(_playerInput);
+        }
+
+        [Button("Activate/Deactivate CLI")]
+        /// <summary>Activates/Deactivates CLI.</summary>
+        /// <param name="_activate">Activate? True by default.</param>
+        private void TEST_ActivateCommandLineInterface(bool _activate = true)
+        {
+            this.ChangeState(_activate ? GameState.PlayerWriting : GameState.AIWriting);
+        }
+#endregion
+
+        /// <summary>Typing's Coroutine.</summary>
+        /// <param name="_poolTextMesh">TextMesh where the typing will happen.</param>
+        /// <param name="_message">Message that is gonna be typed.</param>
+        /// <param name="onTypingEnds">Optional callback invoked when the typing routine comes to an end [null by default].</param>
+        public static IEnumerator TypingRoutine(PoolTextMeshProUGUI _poolTextMesh, string _message, Action onTypingEnds = null)
+        {
+            StringBuilder builder = new StringBuilder();
+            float d = Instance.gameData.typingDuration;
+            float t = 0.0f;
+
+            foreach(char character in _message)
+            {
+                builder.Append(character);
+                _poolTextMesh.textMesh.text = builder.ToString();
+
+                while(t < d)
+                {
+                    t += Time.deltaTime;
+                    yield return null;
+                }
+
+                t = 0.0f;
+            }
+
+            if(onTypingEnds != null) onTypingEnds();
+        }
     }
-}
 }

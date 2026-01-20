@@ -15,10 +15,10 @@ using UnityEngine;
 ===========================================================================*/
 namespace Voidless.TextAdventureMaker
 {
-[Serializable]
-public class TextAdventureSelectorNodeX : TextAdventureCompositeNodeX
-{
-    /// <returns>Node Type.</returns>
-    public override NodeType GetNodeType() { return NodeType.Selector; }
-}
+    [Serializable]
+    public class TextAdventureSelectorNodeX : TextAdventureCompositeNodeX
+    {
+        /// <returns>Node Type.</returns>
+        public override NodeType GetNodeType() { return NodeType.Selector; }
+    }
 }

@@ -16,12 +16,15 @@ using XNode;
 ===========================================================================*/
 namespace Voidless.TextAdventureMaker
 {
-[Serializable]
-public class DialogueNodeX : TextAdventureCompositeNodeX
-{
-    [TextArea] public string dialogue;
+    [Serializable]
+    public class DialogueNodeX : TextAdventureCompositeNodeX
+    {
+        [TextArea] public string dialogue;
 
-    /// <returns>Node Type.</returns>
-    public override NodeType GetNodeType() { return NodeType.Dialogue; }
-}
+        /// <returns>Node Type.</returns>
+        public override NodeType GetNodeType() { return NodeType.Dialogue; }
+
+        /// <returns>Node's Content.</returns>
+        public override string GetContent() { return dialogue; }
+    }
 }

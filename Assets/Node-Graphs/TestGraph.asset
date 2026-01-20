@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue Node X
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 296, y: 72}
+  position: {x: 40, y: -72}
   ports:
     keys:
     - children
@@ -57,7 +57,7 @@ MonoBehaviour:
   next: {fileID: 0}
   _name: 
   children: []
-  dialogue: K', bye then.
+  dialogue: Oh...but you should care. And you should care a lot...
 --- !u!114 &-8895173870370041675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   next: {fileID: 0}
   _name: 
-  validVerbs: []
+  validCommand: 
 --- !u!114 &-7956098026835043411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: Connection Node X
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 296, y: -104}
+  position: {x: -200, y: -232}
   ports:
     keys:
     - parent
@@ -127,7 +127,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: children
-        node: {fileID: -5655552086881811219}
+        node: {fileID: 6472401868950894220}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -142,10 +142,10 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  parent: {fileID: -5655552086881811219}
+  parent: {fileID: 0}
   next: {fileID: 0}
   _name: Poopy Poo
-  validVerbs: []
+  validCommand: Who is Smellano
 --- !u!114 &-6138738208340615376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,10 +169,7 @@ MonoBehaviour:
       _node: {fileID: -6138738208340615376}
       _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: children
-        node: {fileID: -5655552086881811219}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -190,143 +187,6 @@ MonoBehaviour:
   next: {fileID: 0}
   _name: Jumpy Joe
   nodeName: 
---- !u!114 &-5655552086881811219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda5b9150f46673468ecd256f8f6fdbf, type: 3}
-  m_Name: Dialogue Node X
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -264, y: -88}
-  ports:
-    keys:
-    - children
-    - parent
-    - next
-    - quat 0
-    - quat 1
-    - quat 2
-    - quat 3
-    - quat 4
-    - quat 5
-    - quat 6
-    values:
-    - _fieldName: children
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX[], Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: parent
-        node: {fileID: -4050423274992979223}
-        reroutePoints: []
-      - fieldName: parent
-        node: {fileID: -7956098026835043411}
-        reroutePoints: []
-      - fieldName: parent
-        node: {fileID: 650408470050943461}
-        reroutePoints: []
-      - fieldName: parent
-        node: {fileID: -6138738208340615376}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: parent
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: next
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: quat 0
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: quat 1
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: quat 2
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: quat 3
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: quat 4
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: quat 5
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: quat 6
-      _node: {fileID: -5655552086881811219}
-      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-  parent: {fileID: 0}
-  next: {fileID: 0}
-  _name: Root
-  children:
-  - {fileID: -4050423274992979223}
-  - {fileID: -7956098026835043411}
-  - {fileID: 650408470050943461}
-  dialogue: Hello, my name is Smellano.
 --- !u!114 &-4050423274992979223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,7 +200,7 @@ MonoBehaviour:
   m_Name: Connection Node X
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 56, y: 72}
+  position: {x: -200, y: -88}
   ports:
     keys:
     - parent
@@ -352,7 +212,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: children
-        node: {fileID: -5655552086881811219}
+        node: {fileID: 6472401868950894220}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -370,10 +230,10 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  parent: {fileID: -5655552086881811219}
+  parent: {fileID: 0}
   next: {fileID: -9017901698983958639}
   _name: Papa John
-  validVerbs: []
+  validCommand: I don't care
 --- !u!114 &-2794411698968636625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,6 +336,113 @@ MonoBehaviour:
   _name: 
   children: []
   dialogue: Maybe you do't have what it takes to overcome my challenge, sir Romulo.
+--- !u!114 &-1021894442110318551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8cdfa8905207734b9d037ee481fed44, type: 3}
+  m_Name: TAGM Get Value From Blackboard
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 908.71094, y: -152.7759}
+  ports:
+    keys:
+    - intValue
+    - floatValue
+    - boolValue
+    - stringValue
+    - intInput
+    - floatInput
+    - boolInput
+    - stringInput
+    values:
+    - _fieldName: intValue
+      _node: {fileID: -1021894442110318551}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: floatValue
+      _node: {fileID: -1021894442110318551}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: boolValue
+      _node: {fileID: -1021894442110318551}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stringValue
+      _node: {fileID: -1021894442110318551}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: intInput
+      _node: {fileID: -1021894442110318551}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: floatInput
+      _node: {fileID: -1021894442110318551}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: boolInput
+      _node: {fileID: -1021894442110318551}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: stringInput
+      _node: {fileID: -1021894442110318551}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  dataType: 1
+  x: 15
+  intInput: 0
+  floatInput: 545454
+  boolInput: 0
+  stringInput: 
+  intValue: 0
+  floatValue: 0
+  boolValue: 0
+  stringValue: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,7 +456,6 @@ MonoBehaviour:
   m_Name: TestGraph
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -5655552086881811219}
   - {fileID: -7956098026835043411}
   - {fileID: -4050423274992979223}
   - {fileID: 650408470050943461}
@@ -500,6 +466,8 @@ MonoBehaviour:
   - {fileID: -1796966812462522540}
   - {fileID: 2874006433066090484}
   - {fileID: -6138738208340615376}
+  - {fileID: -1021894442110318551}
+  - {fileID: 6472401868950894220}
 --- !u!114 &650408470050943461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,7 +481,7 @@ MonoBehaviour:
   m_Name: Dialogue Node X
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 24, y: -584}
+  position: {x: -200, y: -440}
   ports:
     keys:
     - children
@@ -535,7 +503,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: children
-        node: {fileID: -5655552086881811219}
+        node: {fileID: 6472401868950894220}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -599,7 +567,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   next: {fileID: 0}
   _name: 
-  validVerbs: []
+  validCommand: 
 --- !u!114 &4985722563584056303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,6 +711,67 @@ MonoBehaviour:
   next: {fileID: 0}
   _name: 
   children: []
+--- !u!114 &6472401868950894220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda5b9150f46673468ecd256f8f6fdbf, type: 3}
+  m_Name: Dialogue Node X
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -584, y: -184}
+  ports:
+    keys:
+    - children
+    - parent
+    - next
+    values:
+    - _fieldName: children
+      _node: {fileID: 6472401868950894220}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX[], Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: parent
+        node: {fileID: 650408470050943461}
+        reroutePoints: []
+      - fieldName: parent
+        node: {fileID: -7956098026835043411}
+        reroutePoints: []
+      - fieldName: parent
+        node: {fileID: -4050423274992979223}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: parent
+      _node: {fileID: 6472401868950894220}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 6472401868950894220}
+      _typeQualifiedName: Voidless.TextAdventureMaker.TextAdventureNodeX, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  parent: {fileID: 0}
+  next: {fileID: 0}
+  _name: Root
+  children: []
+  dialogue: Hello, my name is Smellano.
 --- !u!114 &6889240795698882849
 MonoBehaviour:
   m_ObjectHideFlags: 0

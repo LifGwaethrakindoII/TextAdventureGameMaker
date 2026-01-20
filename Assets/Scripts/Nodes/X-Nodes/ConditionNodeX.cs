@@ -16,12 +16,25 @@ using XNode;
 ===========================================================================*/
 namespace Voidless.TextAdventureMaker
 {
-[Serializable]
-public class ConditionNodeX : TextAdventureNodeX
-{
-    public ComparerGroup[] comparers;
+    [Serializable]
+    public class ConditionNodeX : TextAdventureNodeX
+    {
+        public ComparerGroup[] comparers;
 
-    /// <returns>Node Type.</returns>
-    public override NodeType GetNodeType() { return NodeType.Condition; }
-}
+        /// <returns>Node Type.</returns>
+        public override NodeType GetNodeType() { return NodeType.Condition; }
+
+        /// <returns>True if the comparer group is a success.</returns>
+        public bool Evaluate()
+        {
+            if(comparers == null || comparers.Length == 0) return true;
+
+            foreach(ComparerGroup comparer in comparers)
+            {
+                if(comparer.Evaluate()) return true;
+            }
+
+            return false;
+        }
+    }
 }

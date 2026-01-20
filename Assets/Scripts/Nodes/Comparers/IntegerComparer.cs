@@ -5,25 +5,25 @@ using UnityEngine;
 
 namespace Voidless.TextAdventureMaker
 {
-public enum NumberComparison { Equal, NotEqual, Greater, Lower }
+    public enum NumberComparison { Equal, NotEqual, Greater, Lower }
 
-[Serializable]
-public struct IntegerComparer
-{
-    public string key;
-    public NumberComparison comparison;
-    public int value;
-
-    public bool Evaluate(int x)
+    [Serializable]
+    public struct IntegerComparer
     {
-        switch (comparison)
+        public string key;
+        public NumberComparison comparison;
+        public int value;
+
+        public bool Evaluate(int x)
         {
-            case NumberComparison.Equal:        return x == value;
-            case NumberComparison.NotEqual:     return x != value;
-            case NumberComparison.Greater:      return x > value;
-            case NumberComparison.Lower:        return x < value;
-            default:                            return false;
+            switch (comparison)
+            {
+                case NumberComparison.Equal:        return x == value;
+                case NumberComparison.NotEqual:     return x != value;
+                case NumberComparison.Greater:      return x > value;
+                case NumberComparison.Lower:        return x < value;
+                default:                            return false;
+            }
         }
     }
-}
 }

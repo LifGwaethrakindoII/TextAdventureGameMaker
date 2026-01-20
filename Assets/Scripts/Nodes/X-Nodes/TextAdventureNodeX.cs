@@ -21,94 +21,102 @@ using IO = XNode.NodePort.IO;
 ===========================================================================*/
 namespace Voidless.TextAdventureMaker
 {
-public enum NodeType { Undefined, Dialogue, Condition, Connection, Setter, Selector, Sequencer, Jumper }
+    public enum NodeType { Undefined, Dialogue, Condition, Connection, Setter, Selector, Sequencer, Jumper }
 
-public enum NodeResult { Undefined, Success, Running, Failure, Error }
+    public enum NodeResult { Undefined, Success, Running, Failure, Error }
 
-[Serializable]
-public abstract class TextAdventureNodeX : Node
-{
-    [Input] public TextAdventureNodeX parent;
-    [Output] public TextAdventureNodeX next;
-    public string _name;
-
-    /// <summary>Gets and Sets name property.</summary>
-    public string name
+    [Serializable]
+    public abstract class TextAdventureNodeX : Node
     {
-        get { return _name; }
-        set { _name = value; }
-    }
+        [Input] public TextAdventureNodeX parent;
+        [Output] public TextAdventureNodeX next;
+        public string _name;
 
-    /// <returns>Node Type.</returns>
-    public virtual NodeType GetNodeType() { return NodeType.Undefined; }
-
-    /// <summary>GetValue should be overridden to return a value for any specified output port.</summary>
-    public override object GetValue(NodePort port)
-    {
-        switch(port.fieldName)
+        /// <summary>Gets and Sets name property.</summary>
+        public string name
         {
-            case "parent":  return parent;
-            case "next":    return next;
-            default:        return default(object);
+            get { return _name; }
+            set { _name = value; }
         }
-    }
 
-    public TextAdventureNodeX GetParent()
-    {
-        if(parent == null) parent = this.GetInputNode<TextAdventureNodeX>("parent");
+        /// <returns>Node Type.</returns>
+        public virtual NodeType GetNodeType() { return NodeType.Undefined; }
 
-        return parent;
-    }
-
-    public TextAdventureNodeX GetNext()
-    {
-        if(next == null) next = this.GetOutputNode<TextAdventureNodeX>("next");
-
-        return next;
-    }
-
-    /// <summary>Iterates through connections of the type TextAdventureNodeX.</summary>
-    public virtual IEnumerable<TextAdventureNodeX> GetTAMConnections()
-    {
-        foreach (NodePort outputPort in Outputs)
+        /// <summary>GetValue should be overridden to return a value for any specified output port.</summary>
+        public override object GetValue(NodePort port)
         {
-            foreach (NodePort inputPort in outputPort.GetConnections())
+            switch(port.fieldName)
             {
-                TextAdventureNodeX node = inputPort.node as TextAdventureNodeX;
-                if(node != null) yield return node;
+                case "parent":  return parent;
+                case "next":    return next;
+                default:        return default(object);
             }
         }
+
+        public TextAdventureNodeX GetParent()
+        {
+            if(parent == null) parent = this.GetInputNode<TextAdventureNodeX>("parent");
+
+            return parent;
+        }
+
+        public TextAdventureNodeX GetNext()
+        {
+            if(next == null) next = this.GetOutputNode<TextAdventureNodeX>("next");
+
+            return next;
+        }
+
+        /// <summary>Iterates through connections of the type TextAdventureNodeX.</summary>
+        public virtual IEnumerable<TextAdventureNodeX> GetTAMConnections()
+        {
+            foreach (NodePort outputPort in Outputs)
+            {
+                foreach (NodePort inputPort in outputPort.GetConnections())
+                {
+                    TextAdventureNodeX node = inputPort.node as TextAdventureNodeX;
+                    if(node != null) yield return node;
+                }
+            }
+        }
+
+        /// <summary>Iterates through children connections [or single child].</summary>
+        public virtual IEnumerable<TextAdventureNodeX> IterateThroughChildren()
+        {
+            yield return GetNext();
+        }
+
+        /// <summary>Resets Node's port references.</summary>
+        public virtual void Reset()
+        {
+            parent = null;
+            next = null;
+        }
+
+        /// <summary>Evaluates if node is valid given the input.</summary>
+        /// <param name="_input">Input used for node evaluation.</param>
+        /// <returns>Success if the input is expected by the node.</returns>
+        public virtual bool Evaluate(string _input) { return true; }
+
+        /// <returns>Node's Content.</returns>
+        public virtual string GetContent() { return string.Empty; }
+
+        /// <returns>String representing this Node's info.</returns>
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+
+            builder.Append("{ Node Type =  ");
+            builder.Append(GetNodeType().ToString());
+            builder.Append(", Has parent: ");
+            builder.Append(GetParent() != null);
+            builder.Append(", Has children: ");
+            builder.Append(GetNext() != null);
+            builder.Append(", Name: ");
+            builder.Append(name != string.Empty ? name : "NONE");
+            builder.Append(" }");
+
+            return builder.ToString();
+        }
     }
-
-    /// <summary>Iterates through children connections [or single child].</summary>
-    public virtual IEnumerable<TextAdventureNodeX> IterateThroughChildren()
-    {
-        yield return GetNext();
-    }
-
-    /// <summary>Resets Node's port references.</summary>
-    public virtual void Reset()
-    {
-        parent = null;
-        next = null;
-    }
-
-    /// <returns>String representing this Node's info.</returns>
-    public override string ToString()
-    {
-        StringBuilder builder = new StringBuilder();
-
-        builder.Append("{ Node Type =  ");
-        builder.Append(GetNodeType().ToString());
-        builder.Append(", Has parent: ");
-        builder.Append(GetParent() != null);
-        builder.Append(", Has children: ");
-        builder.Append(GetNext() != null);
-        builder.Append(", Name: ");
-        builder.Append(name != string.Empty ? name : "NONE");
-        builder.Append(" }");
-
-        return builder.ToString();
-    }
-}
 }
