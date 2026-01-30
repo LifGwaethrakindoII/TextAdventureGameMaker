@@ -182,14 +182,16 @@ namespace Voidless.TextAdventureMaker
         /// <returns>Word's category.</returns>
         public WordCategory GetWordCategoryWithFuzzyMatching(string word)
         {
-            // 1. Try exact match first
-            if (wordCategoryMap.TryGetValue(word, out var category))
+            // 1. Try exact match first.
+            if(wordCategoryMap.TryGetValue(word, out var category))
                 return category;
 
-            // 2. Fuzzy match against all known words
+            // 2. Fuzzy match against all known words.
             string closestMatch = FuzzyMatcher.FindClosestMatch(word, 2, wordCategoryMap.Keys.ToArray());
 
-            return closestMatch != null ? wordCategoryMap[closestMatch] : WordCategory.Noun;
+
+            // 3. If the closest match is a valid key, return a dictionary entry; Otherwise Noun by default.
+            return !string.IsNullOrEmpty(closestMatch) ? wordCategoryMap[closestMatch] : WordCategory.Noun;
         }
 
         /// <summary>Gets canonical word from synonym.</summary>

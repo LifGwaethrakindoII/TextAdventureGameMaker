@@ -4,6 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+/*============================================================
+**
+** Class:  TextAdventureGameConsoleTesterInspector
+**
+** Purpose: Enables custom inspector for TextAdventureConsoleTester.
+**
+**
+** Author: Lîf Gwaethrakindo
+**
+==============================================================*/
 namespace Voidless.TextAdventureMaker
 {
 	[CustomEditor(typeof(TextAdventureGameConsoleTester))]
@@ -28,10 +38,10 @@ namespace Voidless.TextAdventureMaker
 
 		private void TestOnTextEditorWindow()
 		{
+			if(!TextAdventureGame.Initialize()) return;
+			
+			tree = TextAdventureGame.GetTree();
 			TextConsoleWindow.CreateTextConsoleWindow();
-
-			tree = new TextAdventureNodeXTree(tester.game.gameData.nodeGraph.GetRootNode() as DialogueNodeX);
-
 			if(tree.current != null) TextConsoleWindow.Log(tree.current.GetContent());
 			TextConsoleWindow.AddSubmissionListener(OnTextSubmission);
 		}

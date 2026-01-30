@@ -5,6 +5,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
+/*============================================================
+**
+** Class:  TextAdventureGame
+**
+** Purpose: Main controller of Text Adventure Maker. Deals 
+** with the main flow, UI control, data processing, etc.
+**
+** Author: Lîf Gwaethrakindo
+**
+==============================================================*/
 namespace Voidless.TextAdventureMaker
 {
     public enum GameState
@@ -22,6 +32,7 @@ namespace Voidless.TextAdventureMaker
         [SerializeField] private TextAdventureGameUI _gameUI;
         [SerializeField] private GameObjectPool<PoolTextMeshProUGUI> _textMeshPool;
         [SerializeField] private bool _debug;
+        private TextAdventureNodeXTree _tree;
         private GameState _state;
         private GameState _previousState;
         private StringStringDictionary _stringDictionary;
@@ -62,6 +73,13 @@ namespace Voidless.TextAdventureMaker
         {
             get { return _debug; }
             set { _debug = value; }
+        }
+
+        /// <summary>Gets and Sets tree property.</summary>
+        public TextAdventureNodeXTree tree
+        {
+            get { return _tree; }
+            set { _tree = value; }
         }
 
         /// <summary>Gets and Sets state property.</summary>
@@ -111,26 +129,42 @@ namespace Voidless.TextAdventureMaker
         protected override void OnAwake()
         {
             base.OnAwake();
-            if(gameData != null)
-            {
-                gameData.Initialize();
-
-                stringDictionary = new StringStringDictionary();
-                floatDictionary = new StringFloatDictionary();
-                boolDictionary = new StringBoolDictionary();
-                intDictionary = new StringIntDictionary();
-                stringDictionary.CopyFrom(gameData.stringDictionary);
-                floatDictionary.CopyFrom(gameData.floatDictionary);
-                boolDictionary.CopyFrom(gameData.boolDictionary);
-                intDictionary.CopyFrom(gameData.intDictionary);
-            }
+            Initialize();
             textMeshPool.Initialize();
         }
 
         /// <summary>Callback invoked after the scene loads.</summary>
         private void Start()
         {
-            if (Instance.gameUI != null) Instance.gameUI.commandLineInterface.onMessageSent += OnMessageSent;
+            if(Instance.gameUI != null) Instance.gameUI.commandLineInterface.onMessageSent += OnMessageSent;
+        }
+
+        /// <summary>Initializes all the fundamental game elements (no UI, just data). Separated into a method in case Editor-mode testings are needed.</summary>
+        /// <returns>True if the initialization was successful.</returns>
+        public static bool Initialize()
+        {
+            TextAdventureGameData gameData = Instance.gameData;
+
+            if(gameData == null)
+            {
+                Debug.LogError("[TextAdventureGame] There is no data assigned, the game cannot be initialized.");
+                return false;
+            }
+
+            gameData.Initialize();
+
+            stringDictionary = new StringStringDictionary();
+            floatDictionary = new StringFloatDictionary();
+            boolDictionary = new StringBoolDictionary();
+            intDictionary = new StringIntDictionary();
+            stringDictionary.CopyFrom(gameData.stringDictionary);
+            floatDictionary.CopyFrom(gameData.floatDictionary);
+            boolDictionary.CopyFrom(gameData.boolDictionary);
+            intDictionary.CopyFrom(gameData.intDictionary);
+        
+            Instance.tree = new TextAdventureNodeXTree(Instance.gameData.nodeGraph.GetRootNode() as DialogueNodeX);
+        
+            return true;
         }
 
         /// <summary>Interprets player's input into a command.</summary>
@@ -305,6 +339,8 @@ namespace Voidless.TextAdventureMaker
             ParsedCommand command = gameData.parserData.ParseInput(_playerInput);
             Debug.Log("[TextAdventureGame] ParsedCommand: " + command.ToString());
             //ParseCommand(_playerInput);
+            TEST_AdvanceNarrative(command);
+
         }
 
         [Button("Activate/Deactivate CLI")]
@@ -313,6 +349,77 @@ namespace Voidless.TextAdventureMaker
         private void TEST_ActivateCommandLineInterface(bool _activate = true)
         {
             this.ChangeState(_activate ? GameState.PlayerWriting : GameState.AIWriting);
+        }
+
+        private void TEST_AdvanceNarrative(ParsedCommand _command)
+        {
+            /*Debug.Log("[TextAdventureGame] Dialogue should advance.");
+
+            if (gameData == null)
+            {
+                Debug.LogError("[FLOW] GameData is null");
+                return;
+            }
+
+            // Ensure runtime state exists
+            if (!gameData.initialized)
+            {
+                Debug.Log("[FLOW] Initializing GameData");
+                gameData.Initialize();
+            }
+
+            // Get current node (or entry if none)
+            var currentNode = gameData.CurrentNode;
+            if (currentNode == null)
+            {
+                currentNode = gameData.EntryNode;
+                gameData.CurrentNode = currentNode;
+
+                Debug.Log($"[FLOW] Starting at EntryNode: {currentNode?.name}");
+            }
+            else
+            {
+                Debug.Log($"[FLOW] CurrentNode: {currentNode.name}");
+            }
+
+            if (currentNode == null)
+            {
+                Debug.LogError("[FLOW] No node to evaluate");
+                return;
+            }
+
+            // Evaluate node
+            var result = currentNode.Evaluate(command);
+
+            Debug.Log($"[FLOW] NodeResult: {result}");
+
+            // Observe intent only (NO STATE CHANGE YET)
+            switch (result)
+            {
+                case NodeResult.Running:
+                    Debug.Log("[FLOW] Node is waiting for more input");
+                    break;
+
+                case NodeResult.Success:
+                    Debug.Log("[FLOW] Node succeeded (next node should be selected later)");
+                    break;
+
+                case NodeResult.Failure:
+                    Debug.Log("[FLOW] Node failed (selector/sequencer will decide)");
+                    break;
+
+                case NodeResult.Error:
+                    Debug.LogError("[FLOW] Node returned ERROR");
+                    break;
+            }*/
+        }
+#endregion
+
+#region StaticGetters:
+        /// <returns>Tree from Singleton instance.</returns>
+        public static TextAdventureNodeXTree GetTree()
+        {
+            return Instance.tree;
         }
 #endregion
 

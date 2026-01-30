@@ -6,6 +6,16 @@ using UnityEngine;
 
 using Random = UnityEngine.Random;
 
+/*============================================================
+**
+** Class:  VDictionary
+**
+** Purpose: Generic Dictionary static class (methods and
+** functions that extend the generic Dictionary<K, V>).
+**
+** Author: Lîf Gwaethrakindo
+**
+==============================================================*/
 namespace Voidless
 {
 public static class VDictionary
@@ -24,6 +34,27 @@ public static class VDictionary
 		{
 			a.Add(pair.Key, pair.Value);
 		}
+	}
+
+	/// <summary>Tries to copy Dictionary Entries from B into A.</summary>
+	/// <param name="_source">Source Dictionary.</param>
+	/// <param name="_result">Target Dictionary (passed as reference).</param>
+	public static bool TryCopyFrom<K, V>(Dictionary<K, V> _source, out Dictionary<K, V> _result)
+	{
+	    if (_source == null)
+	    {
+	        _result = null;
+	        return false;
+	    }
+
+	    _result = new Dictionary<K, V>();
+
+	    foreach(KeyValuePair<K, V> pair in _source)
+		{
+			_result.Add(pair.Key, pair.Value);
+		}
+
+	    return true;
 	}
 
 	/// <summary>Sets value into dictionary [internally evaluates if key is contained].</summary>

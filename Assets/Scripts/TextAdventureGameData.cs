@@ -19,6 +19,7 @@ namespace Voidless.TextAdventureMaker
         [SerializeField] private StringFloatDictionary _floatDictionary;
         [SerializeField] private StringBoolDictionary _boolDictionary;
         [SerializeField] private StringIntDictionary _intDictionary;
+        private bool _initialized;
 
         /// <summary>Gets nodeGraph property.</summary>
         public TextAdventureXNodeGraph nodeGraph { get { return _nodeGraph; } }
@@ -41,10 +42,24 @@ namespace Voidless.TextAdventureMaker
         /// <summary>Gets intDictionary property.</summary>
         public StringIntDictionary intDictionary { get { return _intDictionary; } }
 
+        /// <summary>Gets and Sets initialized property.</summary>
+        public bool initialized
+        {
+            get { return _initialized; }
+            private set { _initialized = value; }
+        }
+
+        /// <summary>Resets TextAdventureGameData's instance to its default values.</summary>
+        public void Reset()
+        {
+            initialized = false;
+        }
+
         /// <summary>Initializes Data.</summary>
         public void Initialize()
         {
             parserData.Initialize();
+            initialized = true;
         }
 
         [Button("Generate JSON")]

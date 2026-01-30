@@ -4,6 +4,17 @@ using System.Text;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*============================================================
+**
+** Class:  ParsedCommand
+**
+** Purpose: Player's input categorized by basic elements such 
+** as verbs, nouns, adjectives, articles, etc. Which makes it
+** easier for the game to interpret.
+**
+** Author: Lîf Gwaethrakindo
+**
+==============================================================*/
 namespace Voidless.TextAdventureMaker
 {
     [Serializable]

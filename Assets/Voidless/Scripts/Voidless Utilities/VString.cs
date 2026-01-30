@@ -7,6 +7,16 @@ using UnityEngine;
 using UnityRandom = UnityEngine.Random;
 using Random = System.Random;
 
+/*============================================================
+**
+** Class:  VString
+**
+** Purpose: Static functions and methods for string.
+**
+**
+** Author: Lîf Gwaethrakindo
+**
+==============================================================*/
 namespace Voidless
 {
 	public enum Format
